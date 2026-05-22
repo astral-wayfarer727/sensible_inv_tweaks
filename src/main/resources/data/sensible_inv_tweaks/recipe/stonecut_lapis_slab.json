@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:lapis_block",
+  "result": {
+    "id": "sensible_inv_tweaks:lapis_slab",
+    "count": 2
+  }
+}

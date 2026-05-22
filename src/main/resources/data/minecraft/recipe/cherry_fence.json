@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
+  "key": {
+    "#": "minecraft:cherry_planks",
+    "/": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:cherry_fence",
+    "count": 12
+  }
+}

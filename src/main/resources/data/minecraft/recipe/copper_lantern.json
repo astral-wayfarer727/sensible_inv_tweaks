@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#=#",
+    " # "
+  ],
+  "key": {
+    "#": "minecraft:copper_torch",
+    "=": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "minecraft:copper_lantern",
+    "count": 4
+  }
+}

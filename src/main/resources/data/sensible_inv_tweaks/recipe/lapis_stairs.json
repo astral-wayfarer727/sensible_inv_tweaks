@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:lapis_block"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:lapis_stairs",
+    "count": 4
+  }
+}

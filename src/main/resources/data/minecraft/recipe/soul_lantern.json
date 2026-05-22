@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#=#",
+    " # "
+  ],
+  "key": {
+    "#": "minecraft:soul_torch",
+    "=": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "minecraft:soul_lantern",
+    "count": 4
+  }
+}

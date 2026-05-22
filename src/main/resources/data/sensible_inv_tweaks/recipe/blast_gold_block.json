@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 9,
+  "cookingtime": 100,
+  "ingredient": "minecraft:raw_gold_block",
+  "result": {
+    "id": "minecraft:gold_block"
+  }
+}

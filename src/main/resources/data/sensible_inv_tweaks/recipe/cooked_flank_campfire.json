@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "experience": 0.0,
+  "cookingtime": 200,
+  "ingredient": "sensible_inv_tweaks:raw_flank",
+  "result": {
+    "id": "sensible_inv_tweaks:cooked_flank"
+  }
+}

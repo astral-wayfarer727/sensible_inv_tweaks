@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#F#",
+    "CCC"
+  ],
+  "key": {
+    "#": "minecraft:iron_ingot",
+    "F": "minecraft:furnace",
+    "C": "minecraft:cobblestone"
+  },
+  "result": {
+    "id": "minecraft:blast_furnace"
+  }
+}

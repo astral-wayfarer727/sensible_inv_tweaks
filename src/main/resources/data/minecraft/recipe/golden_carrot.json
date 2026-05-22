@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#C#",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:gold_ingot",
+    "C": "minecraft:carrot"
+  },
+  "result": {
+    "id": "minecraft:golden_carrot"
+  }
+}

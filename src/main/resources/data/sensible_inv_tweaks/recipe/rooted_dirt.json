@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#D",
+    "D#"
+  ],
+  "key": {
+    "#": "minecraft:hanging_roots",
+    "D": "minecraft:dirt"
+  },
+  "result": {
+    "id": "minecraft:rooted_dirt",
+    "count": 2
+  }
+}

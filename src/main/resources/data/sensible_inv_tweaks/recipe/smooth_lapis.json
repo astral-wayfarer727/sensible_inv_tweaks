@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0,
+  "cookingtime": 200,
+  "ingredient": "minecraft:lapis_block",
+  "result": {
+    "id": "sensible_inv_tweaks:smooth_lapis"
+  }
+}

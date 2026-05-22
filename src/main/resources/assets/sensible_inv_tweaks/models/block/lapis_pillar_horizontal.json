@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "sensible_inv_tweaks:block/lapis_pillar_top",
+    "side": "sensible_inv_tweaks:block/lapis_pillar"
+  }
+}

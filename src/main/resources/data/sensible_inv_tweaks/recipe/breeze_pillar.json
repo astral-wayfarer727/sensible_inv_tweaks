@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:breeze_rod"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:breeze_pillar",
+    "count": 1
+  }
+}

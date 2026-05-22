@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "sensible_inv_tweaks:block/blaze_pillar_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "sensible_inv_tweaks:block/blaze_pillar"
+    },
+    "axis=z": {
+      "model": "sensible_inv_tweaks:block/blaze_pillar_horizontal",
+      "x": 90
+    }
+  }
+}

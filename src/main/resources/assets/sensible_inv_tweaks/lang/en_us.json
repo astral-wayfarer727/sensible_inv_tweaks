@@ -1,0 +1,21 @@
+{
+  "item.sensible_inv_tweaks.raw_flank": "Raw Flank",
+  "item.sensible_inv_tweaks.cooked_flank": "Cooked Flank",
+  "item.sensible_inv_tweaks.raw_haunch": "Raw Haunch",
+  "item.sensible_inv_tweaks.cooked_haunch": "Cooked Haunch",
+  "item.sensible_inv_tweaks.raw_fish": "Raw Fish",
+  "item.sensible_inv_tweaks.cooked_fish": "Cooked Fish",
+
+  "block.sensible_inv_tweaks.lapis_stairs": "Lapis Stairs",
+  "block.sensible_inv_tweaks.lapis_slab": "Lapis Slab",
+  "block.sensible_inv_tweaks.lapis_bricks": "Lapis Bricks",
+  "block.sensible_inv_tweaks.chiseled_lapis": "Chiseled Lapis Block",
+  "block.sensible_inv_tweaks.lapis_pillar": "Lapis Pillar",
+
+  "block.sensible_inv_tweaks.smooth_lapis": "Smooth Lapis Block",
+  "block.sensible_inv_tweaks.smooth_lapis_stairs": "Smooth Lapis Stairs",
+  "block.sensible_inv_tweaks.smooth_lapis_slab": "Smooth Lapis Slab",
+
+  "block.sensible_inv_tweaks.blaze_pillar": "Blaze Rod Pillar",
+  "block.sensible_inv_tweaks.breeze_pillar": "Breeze Rod Pillar"
+}

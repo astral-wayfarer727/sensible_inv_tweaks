@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "#minecraft:planks",
+    "S": "minecraft:stone",
+    "I": "minecraft:stick"
+  },
+  "pattern": [
+    "ISI",
+    "# #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:grindstone"
+  }
+}

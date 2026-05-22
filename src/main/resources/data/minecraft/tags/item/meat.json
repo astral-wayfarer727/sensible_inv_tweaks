@@ -1,0 +1,8 @@
+{
+  "values": [
+    "sensible_inv_tweaks:raw_flank",
+    "sensible_inv_tweaks:cooked_flank",
+    "sensible_inv_tweaks:raw_haunch",
+    "sensible_inv_tweaks:cooked_haunch"
+  ]
+}
