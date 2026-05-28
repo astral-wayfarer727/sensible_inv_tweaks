@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "sensible_inv_tweaks:block/feather_block_top",
+    "side": "sensible_inv_tweaks:block/feather_block"
+  }
+}

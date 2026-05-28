@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "/": "minecraft:stick",
-    "_": "minecraft:smooth_stone"
+    "#": "minecraft:smooth_stone"
   },
   "pattern": [
     "///",

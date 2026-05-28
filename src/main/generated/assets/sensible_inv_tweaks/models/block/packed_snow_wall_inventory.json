@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "sensible_inv_tweaks:block/packed_snow"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "sensible_inv_tweaks:block/packed_snow"
+  }
+}

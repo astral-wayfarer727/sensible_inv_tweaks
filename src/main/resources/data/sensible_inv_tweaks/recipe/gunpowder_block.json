@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:gunpowder"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:gunpowder_block"
+  }
+}

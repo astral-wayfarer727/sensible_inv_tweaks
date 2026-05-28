@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "sensible_inv_tweaks:cut_packed_ice",
+  "result": {
+    "id": "sensible_inv_tweaks:cut_packed_ice_slab",
+    "count": 2
+  }
+}

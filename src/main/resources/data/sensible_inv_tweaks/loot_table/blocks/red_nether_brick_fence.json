@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sensible_inv_tweaks:red_nether_brick_fence"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "sensible_inv_tweaks:blocks/red_nether_brick_fence"
+}

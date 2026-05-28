@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "sensible_inv_tweaks:block/packed_snow",
+    "side": "sensible_inv_tweaks:block/packed_snow",
+    "top": "sensible_inv_tweaks:block/packed_snow"
+  }
+}

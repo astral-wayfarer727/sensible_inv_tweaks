@@ -17,5 +17,27 @@
   "block.sensible_inv_tweaks.smooth_lapis_slab": "Smooth Lapis Slab",
 
   "block.sensible_inv_tweaks.blaze_pillar": "Blaze Rod Pillar",
-  "block.sensible_inv_tweaks.breeze_pillar": "Breeze Rod Pillar"
+  "block.sensible_inv_tweaks.breeze_pillar": "Breeze Rod Pillar",
+  "block.sensible_inv_tweaks.feather_block": "Block of Feathers",
+  "block.sensible_inv_tweaks.gunpowder_block": "Block of Gunpowder",
+  "block.sensible_inv_tweaks.sugar_block": "Block of Sugar",
+
+  "block.sensible_inv_tweaks.packed_snow": "Packed Snow",
+  "block.sensible_inv_tweaks.packed_snow_stairs": "Packed Snow Stairs",
+  "block.sensible_inv_tweaks.packed_snow_slab": "Packed Snow Slab",
+  "block.sensible_inv_tweaks.packed_snow_wall": "Packed Snow Wall",
+
+  "block.sensible_inv_tweaks.cut_packed_ice": "Cut Packed Ice",
+  "block.sensible_inv_tweaks.cut_packed_ice_stairs": "Cut Packed Ice Stairs",
+  "block.sensible_inv_tweaks.cut_packed_ice_slab": "Cut Packed Ice Slab",
+  "block.sensible_inv_tweaks.cut_packed_ice_wall": "Cut Packed Ice Wall",
+
+  "block.sensible_inv_tweaks.cut_blue_ice": "Cut Blue Ice",
+  "block.sensible_inv_tweaks.cut_blue_ice_stairs": "Cut Blue Ice Stairs",
+  "block.sensible_inv_tweaks.cut_blue_ice_slab": "Cut Blue Ice Slab",
+  "block.sensible_inv_tweaks.cut_blue_ice_wall": "Cut Blue Ice Wall",
+
+  "block.sensible_inv_tweaks.red_nether_brick_fence": "Red Nether Brick Fence",
+  "block.sensible_inv_tweaks.red_chiseled_nether_bricks": "Red Chiseled Nether Bricks",
+  "block.sensible_inv_tweaks.red_cracked_nether_bricks": "Red Cracked Nether Bricks"
 }

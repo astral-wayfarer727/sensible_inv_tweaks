@@ -1,11 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "pattern": [
-    "#"
+  "ingredients": [
+    "minecraft:terracotta"
   ],
-  "key": {
-    "#": "minecraft:terracotta"
-  },
   "result": {
     "id": "minecraft:brick",
     "count": 4

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:red_nether_brick",
+  "result": {
+    "id": "sensible_inv_tweaks:red_chiseled_nether_brick"
+  }
+}

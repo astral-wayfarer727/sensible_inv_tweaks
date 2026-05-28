@@ -7,6 +7,17 @@
     "sensible_inv_tweaks:smooth_lapis",
     "sensible_inv_tweaks:chiseled_lapis",
     "sensible_inv_tweaks:blaze_pillar",
-    "sensible_inv_tweaks:breeze_pillar"
+    "sensible_inv_tweaks:breeze_pillar",
+    "sensible_inv_tweaks:red_nether_brick_fence",
+    "sensible_inv_tweaks:chiseled_red_nether_bricks",
+    "sensible_inv_tweaks:cracked_red_nether_bricks",
+    "sensible_inv_tweaks:cut_blue_ice",
+    "sensible_inv_tweaks:cut_blue_ice_stairs",
+    "sensible_inv_tweaks:cut_blue_ice_slab",
+    "sensible_inv_tweaks:cut_blue_ice_wall",
+    "sensible_inv_tweaks:cut_packed_ice",
+    "sensible_inv_tweaks:cut_packed_ice_stairs",
+    "sensible_inv_tweaks:cut_packed_ice_slab",
+    "sensible_inv_tweaks:cut_packed_ice_wall"
   ]
 }

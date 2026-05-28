@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:red_nether_bricks",
+  "result": {
+    "id": "sensible_inv_tweaks:red_nether_brick_fence",
+    "count": 2
+  }
+}
