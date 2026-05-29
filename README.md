@@ -25,6 +25,8 @@
 - Removed the Marked Map from Shipwrecks since Buried Treasure is no longer... treasure
 - Leather Armour removed from Supply Shipwreck chests
 - Diamonds removed from Treasure Shipwreck chests
+- Leaf Litter now only drops with Shears
+- Nether Gold Ore spawn rates adjusted to reflect nuggets soft-removal
 
 ## Loot Tables - Mobs
 
@@ -46,6 +48,9 @@
 - Shulker Shell drop chance from Shulker riased
 - Zombie Piglins only drop Rotten Flesh
 - Glowing Arrows removed from Piglin Bartering tables
+- Witches Loot Table massively cleaned up, only drop Redstone Dust, Gunpowder and Glowstone now
+- Ravagers no longer drop Saddles since they can be easily crafted
+- 
 
 ## Recipe Changes
 
@@ -75,6 +80,7 @@
 - Packed Mud no longer needs wheat, crafted by 4 Mud blocks in 2x2 form
 - Stonecutter now uses Stone Crafting Materials (Cobblestone, Cobbled Deepslate and Blackstone)
 - Template duplication only requires 1 Iron Ingot instead of 7 Diamonds
+- Bottles now craft for 16
 
 ## Recipe Additions
 
@@ -105,10 +111,17 @@
 - Standard Deepslate can now be Stonecut into much more blocks
 - Stone can be Stonecut into Cobblestone
 - Terracotta can be unpacked into 4 Bricks
+- Nether Wart Block can be decrafted back into 9 Wart
+- Both Wart Blocks can be converted into each other using Crimson Roots and Nether Sprout respectively
+- Magma Block can be unpacked back into 4 Magma Cream
 
 ## Brand New Additions
 
 - New Lapis Blockset to mirror Quartz
 - As mentioned earlier, new meat to group old meat types together
 - Breeze Rod Block, crafted from and into 9 Breeze Rods, is a pillar block and can be placed directionally
+- Red Nether Brick missing blocks added (Fence, Cracked and Chiseled)
+- Block of Gunpowder and Block of Sugar, crafted with 9 Gunpowder and Sugar respectively, can be unpacked into their respective ingredient and obey gravity
+- Block of Feathers, crafted with and into 9 feathers, and functions identically to Hay Blocks, negating a heavy amount of fall damage
+- Packed Snow blocks, Cut Packed Ice blocks and Cut Blue Ice blocks, which can be made into stairs, slabs and walls
 - Blaze Rod Block, crafted from and into 9 Blaze Rods, is a pillar block and can be placed directionally, and gives out light
