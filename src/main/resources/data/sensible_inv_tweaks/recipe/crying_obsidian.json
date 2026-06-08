@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " # ",
-    "# #",
+    "#O#",
     " # "
   ],
   "key": {
-    "#": "minecraft:lapis_block"
+    "#": "minecraft:ghast_tear",
+    "O": "minecraft:obsidian"
   },
   "result": {
-    "id": "sensible_inv_tweaks:chiseled_lapis",
-    "count": 4
+    "id": "minecraft:crying_obsidian"
   }
 }

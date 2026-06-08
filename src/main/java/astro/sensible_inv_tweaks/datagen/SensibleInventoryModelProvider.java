@@ -63,5 +63,6 @@ public class SensibleInventoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COOKED_HAUNCH, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_FISH, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_FISH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLDEN_POTATO, Models.GENERATED);
     }
 }

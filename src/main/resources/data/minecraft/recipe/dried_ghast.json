@@ -1,11 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "group": "dry_ghast",
-  "key": {},
-  "pattern": [],
+  "pattern": [
+    "S#",
+    "#S"
+  ],
+  "key": {
+    "S": "minecraft:soul_sand",
+    "#": "minecraft:gravel"
+  },
   "result": {
-    "count": 1,
-    "id": "minecraft:dried_ghast"
+    "id": "minecraft:soul_soil",
+    "count": 2
   }
 }

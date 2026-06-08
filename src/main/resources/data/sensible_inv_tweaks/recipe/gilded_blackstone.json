@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " # ",
-    "# #",
+    "#B#",
     " # "
   ],
   "key": {
-    "#": "minecraft:lapis_block"
+    "#": "minecraft:gold_nugget",
+    "B": "minecraft:blackstone"
   },
   "result": {
-    "id": "sensible_inv_tweaks:chiseled_lapis",
-    "count": 4
+    "id": "minecraft:gilded_blackstone"
   }
 }

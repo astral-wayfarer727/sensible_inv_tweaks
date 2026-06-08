@@ -2,6 +2,7 @@ package astro.sensible_inv_tweaks.items;
 
 import astro.sensible_inv_tweaks.SensibleInventoryTweaks;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -21,12 +22,18 @@ public class ModItems {
         return item;
     }
 
+    //Replacement Food Items
     public static Item RAW_FLANK = register("raw_flank", Item::new, new Item.Settings().food(ModFoodComponents.RAW_FLANK));
     public static Item COOKED_FLANK = register("cooked_flank", Item::new, new Item.Settings().food(ModFoodComponents.COOKED_FLANK));
     public static Item RAW_HAUNCH = register("raw_haunch", Item::new, new Item.Settings().food(ModFoodComponents.RAW_HAUNCH));
     public static Item COOKED_HAUNCH = register("cooked_haunch", Item::new, new Item.Settings().food(ModFoodComponents.COOKED_HAUNCH));
     public static Item RAW_FISH = register("raw_fish", Item::new, new Item.Settings().food(ModFoodComponents.RAW_FISH));
     public static Item COOKED_FISH = register("cooked_fish", Item::new, new Item.Settings().food(ModFoodComponents.COOKED_FISH));
+
+    //Potion Ingredient (eventually)
+    //Enchanted Golden Potato to be removed once Golden Potato becomes the ingredient for haste potions
+    public static Item GOLDEN_POTATO = register("golden_potato", Item::new, new Item.Settings().food(ModFoodComponents.GOLDEN_POTATO, ModConsumableComponents.GOLDEN_POTATO));
+    public static Item ENCHANTED_GOLDEN_POTATO = register("enchanted_golden_potato", Item::new, new Item.Settings().component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true).food(ModFoodComponents.ENCHANTED_GOLDEN_POTATO, ModConsumableComponents.ENCHANTED_GOLDEN_POTATO));
 
     public static void registerItems() {
         SensibleInventoryTweaks.LOGGER.info("Registering items for " + SensibleInventoryTweaks.MOD_ID);
@@ -38,6 +45,8 @@ public class ModItems {
             entries.add(COOKED_HAUNCH);
             entries.add(RAW_FISH);
             entries.add(COOKED_FISH);
+            entries.add(GOLDEN_POTATO);
+            entries.add(ENCHANTED_GOLDEN_POTATO);
         });
     }
 }
