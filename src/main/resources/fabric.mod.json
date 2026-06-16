@@ -1,15 +1,15 @@
 {
 	"schemaVersion": 1,
 	"id": "sensible_inv_tweaks",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"name": "Sensible Inventory Tweaks",
-	"description": "Simplifies loot tables and streamlines crafting recipes",
+	"description": "Simplifies loot tables and streamlines crafting recipes, with other fun miscellaneous additions in between",
 	"authors": [
 		"Astral Wayfarer"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/sensible-inv-tweaks",
+		"sources": "https://github.com/astral-wayfarer727/sensible_inv_tweaks"
 	},
 	"license": "MIT",
 	"icon": "assets/sensible_inv_tweaks/icon.png",

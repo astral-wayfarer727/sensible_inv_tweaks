@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -39,14 +40,14 @@ public class ModItems {
         SensibleInventoryTweaks.LOGGER.info("Registering items for " + SensibleInventoryTweaks.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
-            entries.add(RAW_FLANK);
-            entries.add(COOKED_FLANK);
-            entries.add(RAW_HAUNCH);
-            entries.add(COOKED_HAUNCH);
-            entries.add(RAW_FISH);
-            entries.add(COOKED_FISH);
-            entries.add(GOLDEN_POTATO);
-            entries.add(ENCHANTED_GOLDEN_POTATO);
+            entries.addAfter(Items.COOKED_RABBIT, ModItems.RAW_FLANK);
+            entries.addAfter(ModItems.RAW_FLANK, ModItems.COOKED_FLANK);
+            entries.addAfter(ModItems.COOKED_FLANK, ModItems.RAW_HAUNCH);
+            entries.addAfter(ModItems.RAW_HAUNCH, ModItems.COOKED_HAUNCH);
+            entries.addAfter(Items.COOKED_SALMON, ModItems.RAW_FISH);
+            entries.addAfter(ModItems.RAW_FISH, ModItems.COOKED_FISH);
+            entries.addAfter(Items.POTATO, ModItems.GOLDEN_POTATO);
+            entries.addAfter(ModItems.GOLDEN_POTATO, ModItems.ENCHANTED_GOLDEN_POTATO);
         });
     }
 }

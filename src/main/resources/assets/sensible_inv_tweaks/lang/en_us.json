@@ -42,5 +42,10 @@
 
   "block.sensible_inv_tweaks.red_nether_brick_fence": "Red Nether Brick Fence",
   "block.sensible_inv_tweaks.red_chiseled_nether_bricks": "Red Chiseled Nether Bricks",
-  "block.sensible_inv_tweaks.red_cracked_nether_bricks": "Red Cracked Nether Bricks"
+  "block.sensible_inv_tweaks.red_cracked_nether_bricks": "Red Cracked Nether Bricks",
+
+  "block.sensible_inv_tweaks.crimson_cap": "Crimson Cap",
+  "block.sensible_inv_tweaks.warped_cap": "Warped Cap",
+  "block.sensible_inv_tweaks.crimson_budding_shroomlight": "Crimson Budding Shroomlight",
+  "block.sensible_inv_tweaks.warped_budding_shroomlight": "Warped Budding Shroomlight"
 }

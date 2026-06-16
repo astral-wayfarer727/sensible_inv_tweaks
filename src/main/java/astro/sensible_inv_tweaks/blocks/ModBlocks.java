@@ -6,6 +6,7 @@ import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
@@ -33,6 +34,20 @@ public class ModBlocks {
             Block::new, AbstractBlock.Settings.copy(RED_NETHER_BRICKS));
     public static Block RED_CHISELED_NETHER_BRICKS = register("red_chiseled_nether_bricks",
             Block::new, AbstractBlock.Settings.copy(RED_NETHER_BRICKS));
+
+    //Nether Foliage
+    public static Block CRIMSON_CAP = register("crimson_cap",
+            settings -> new UntintedParticleLeavesBlock(0.01f, ParticleTypes.CRIMSON_SPORE, settings),
+            AbstractBlock.Settings.create().ticksRandomly().mapColor(MapColor.RED).strength(0.5F).sounds(BlockSoundGroup.WART_BLOCK));
+    public static Block WARPED_CAP = register("warped_cap",
+            settings -> new UntintedParticleLeavesBlock(0.01f, ParticleTypes.WARPED_SPORE, settings),
+            AbstractBlock.Settings.create().ticksRandomly().mapColor(MapColor.BRIGHT_TEAL).strength(0.5F).sounds(BlockSoundGroup.WART_BLOCK));
+    public static Block CRIMSON_BUDDING_SHROOMLIGHT = register("crimson_budding_shroomlight",
+            settings -> new UntintedParticleLeavesBlock(0.0f, ParticleTypes.CRIMSON_SPORE, settings),
+            AbstractBlock.Settings.create().ticksRandomly().mapColor(MapColor.RED).strength(1.0F).luminance(state -> 15).sounds(BlockSoundGroup.SHROOMLIGHT));
+    public static Block WARPED_BUDDING_SHROOMLIGHT = register("warped_budding_shroomlight",
+            settings -> new UntintedParticleLeavesBlock(0.0f, ParticleTypes.WARPED_SPORE, settings),
+            AbstractBlock.Settings.create().ticksRandomly().mapColor(MapColor.BRIGHT_TEAL).strength(1.0F).luminance(state -> 15).sounds(BlockSoundGroup.SHROOMLIGHT));
 
     //Lapis Blockset
     public static Block LAPIS_STAIRS = register("lapis_stairs",
@@ -106,42 +121,46 @@ public class ModBlocks {
         SensibleInventoryTweaks.LOGGER.info("Registering Blocks for " + SensibleInventoryTweaks.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(LAPIS_SLAB);
-            entries.add(LAPIS_STAIRS);
-            entries.add(CHISELED_LAPIS);
-            entries.add(LAPIS_BRICKS);
-            entries.add(SMOOTH_LAPIS);
-            entries.add(SMOOTH_LAPIS_STAIRS);
-            entries.add(SMOOTH_LAPIS_SLAB);
-            entries.add(LAPIS_PILLAR);
+            entries.addAfter(Blocks.LAPIS_BLOCK, ModBlocks.LAPIS_STAIRS);
+            entries.addAfter(ModBlocks.LAPIS_STAIRS, ModBlocks.LAPIS_SLAB);
+            entries.addAfter(ModBlocks.LAPIS_SLAB, ModBlocks.CHISELED_LAPIS);
+            entries.addAfter(ModBlocks.CHISELED_LAPIS, ModBlocks.LAPIS_BRICKS);
+            entries.addAfter(ModBlocks.LAPIS_BRICKS, ModBlocks.LAPIS_PILLAR);
+            entries.addAfter(ModBlocks.LAPIS_PILLAR, ModBlocks.SMOOTH_LAPIS);
+            entries.addAfter(ModBlocks.SMOOTH_LAPIS, ModBlocks.SMOOTH_LAPIS_STAIRS);
+            entries.addAfter(ModBlocks.SMOOTH_LAPIS_STAIRS, ModBlocks.SMOOTH_LAPIS_SLAB);
 
-            entries.add(BLAZE_PILLAR);
-            entries.add(BREEZE_PILLAR);
-            entries.add(FEATHER_BLOCK);
-            entries.add(GUNPOWDER_BLOCK);
-            entries.add(SUGAR_BLOCK);
+            entries.addAfter(Blocks.RED_NETHER_BRICK_WALL, ModBlocks.RED_NETHER_BRICK_FENCE);
+            entries.addAfter(ModBlocks.RED_NETHER_BRICK_FENCE, ModBlocks.RED_CHISELED_NETHER_BRICKS);
+            entries.addAfter(Blocks.RED_NETHER_BRICKS, ModBlocks.RED_CRACKED_NETHER_BRICKS);
 
-            entries.add(RED_NETHER_BRICK_FENCE);
-            entries.add(RED_CHISELED_NETHER_BRICKS);
-            entries.add(RED_CRACKED_NETHER_BRICKS);
+            entries.addAfter(Blocks.CUT_RED_SANDSTONE_SLAB, ModBlocks.PACKED_SNOW);
+            entries.addAfter(ModBlocks.PACKED_SNOW, ModBlocks.PACKED_SNOW_STAIRS);
+            entries.addAfter(ModBlocks.PACKED_SNOW_STAIRS, ModBlocks.PACKED_SNOW_SLAB);
+            entries.addAfter(ModBlocks.PACKED_SNOW_SLAB, ModBlocks.PACKED_SNOW_WALL);
 
-            entries.add(PACKED_SNOW);
-            entries.add(PACKED_SNOW_STAIRS);
-            entries.add(PACKED_SNOW_SLAB);
-            entries.add(PACKED_SNOW_WALL);
+            entries.addAfter(Blocks.CUT_RED_SANDSTONE_SLAB, ModBlocks.CUT_PACKED_ICE);
+            entries.addAfter(ModBlocks.CUT_PACKED_ICE, ModBlocks.CUT_PACKED_ICE_STAIRS);
+            entries.addAfter(ModBlocks.CUT_PACKED_ICE_STAIRS, ModBlocks.CUT_PACKED_ICE_SLAB);
+            entries.addAfter(ModBlocks.CUT_PACKED_ICE_SLAB, ModBlocks.CUT_PACKED_ICE_WALL);
 
-            entries.add(CUT_PACKED_ICE);
-            entries.add(CUT_PACKED_ICE_STAIRS);
-            entries.add(CUT_PACKED_ICE_SLAB);
-            entries.add(CUT_PACKED_ICE_WALL);
-
-            entries.add(CUT_BLUE_ICE);
-            entries.add(CUT_BLUE_ICE_STAIRS);
-            entries.add(CUT_BLUE_ICE_SLAB);
-            entries.add(CUT_BLUE_ICE_WALL);
+            entries.addAfter(Blocks.CUT_RED_SANDSTONE_SLAB, ModBlocks.CUT_BLUE_ICE);
+            entries.addAfter(ModBlocks.CUT_BLUE_ICE, ModBlocks.CUT_BLUE_ICE_STAIRS);
+            entries.addAfter(ModBlocks.CUT_BLUE_ICE_STAIRS, ModBlocks.CUT_BLUE_ICE_SLAB);
+            entries.addAfter(ModBlocks.CUT_BLUE_ICE_SLAB, ModBlocks.CUT_BLUE_ICE_WALL);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
-            entries.add(BLAZE_PILLAR);
+            entries.addAfter(Blocks.PEARLESCENT_FROGLIGHT, ModBlocks.BLAZE_PILLAR);
+            entries.addAfter(ModBlocks.BLAZE_PILLAR, ModBlocks.BREEZE_PILLAR);
+            entries.addAfter(Blocks.SUSPICIOUS_GRAVEL, ModBlocks.GUNPOWDER_BLOCK);
+            entries.addAfter(ModBlocks.GUNPOWDER_BLOCK, ModBlocks.SUGAR_BLOCK);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.addAfter(Blocks.WARPED_WART_BLOCK, ModBlocks.CRIMSON_CAP);
+            entries.addAfter(ModBlocks.CRIMSON_CAP, ModBlocks.WARPED_CAP);
+            entries.addAfter(Blocks.SHROOMLIGHT, ModBlocks.CRIMSON_BUDDING_SHROOMLIGHT);
+            entries.addAfter(ModBlocks.CRIMSON_BUDDING_SHROOMLIGHT, ModBlocks.WARPED_BUDDING_SHROOMLIGHT);
+            entries.addAfter(Blocks.HAY_BLOCK, ModBlocks.FEATHER_BLOCK);
         });
     }
 }

@@ -33,6 +33,12 @@ public class SensibleInventoryModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_CHISELED_NETHER_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_CRACKED_NETHER_BRICKS);
 
+        //Nether Foliage
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRIMSON_CAP);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WARPED_CAP);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRIMSON_BUDDING_SHROOMLIGHT);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WARPED_BUDDING_SHROOMLIGHT);
+
         //Smooth Lapis
         BlockStateModelGenerator.BlockTexturePool smoothLapisPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SMOOTH_LAPIS);
         smoothLapisPool.stairs(ModBlocks.SMOOTH_LAPIS_STAIRS);

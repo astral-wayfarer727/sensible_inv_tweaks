@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sensible_inv_tweaks:crimson_cap",
+    "sensible_inv_tweaks:warped_cap",
+    "sensible_inv_tweaks:crimson_budding_shroomlight",
+    "sensible_inv_tweaks:warped_budding_shroomlight",
+    "minecraft:ochre_froglight",
+    "minecraft:pearlescent_froglight",
+    "minecraft:verdant_froglight"
+  ]
+}

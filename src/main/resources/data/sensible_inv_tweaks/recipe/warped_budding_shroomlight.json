@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W#",
+    "#W"
+  ],
+  "key": {
+    "W": "sensible_inv_tweaks:warped_cap",
+    "#": "minecraft:shroomlight"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:warped_budding_shroomlight",
+    "count": 2
+  }
+}
