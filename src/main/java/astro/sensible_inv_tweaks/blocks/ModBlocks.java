@@ -106,14 +106,14 @@ public class ModBlocks {
         SensibleInventoryTweaks.LOGGER.info("Registering Blocks for " + SensibleInventoryTweaks.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(LAPIS_SLAB);
-            entries.add(LAPIS_STAIRS);
-            entries.add(CHISELED_LAPIS);
-            entries.add(LAPIS_BRICKS);
-            entries.add(SMOOTH_LAPIS);
-            entries.add(SMOOTH_LAPIS_STAIRS);
-            entries.add(SMOOTH_LAPIS_SLAB);
-            entries.add(LAPIS_PILLAR);
+            entries.addAfter(Blocks.LAPIS_BLOCK, ModBlocks.LAPIS_SLAB);
+            entries.addAfter(Blocks.LAPIS_BLOCK, ModBlocks.LAPIS_STAIRS);
+            entries.addAfter(Blocks.LAPIS_BLOCK, ModBlocks.CHISELED_LAPIS);
+            entries.addAfter(Blocks.LAPIS_BLOCK, ModBlocks.LAPIS_BRICKS);
+            entries.addAfter(Blocks.LAPIS_BLOCK, ModBlocks.SMOOTH_LAPIS);
+            entries.addAfter(Blocks.LAPIS_BLOCK, ModBlocks.SMOOTH_LAPIS_STAIRS);
+            entries.addAfter(Blocks.LAPIS_BLOCK, ModBlocks.SMOOTH_LAPIS_SLAB);
+            entries.addAfter(Blocks.LAPIS_BLOCK, ModBlocks.LAPIS_PILLAR);
 
             entries.add(BLAZE_PILLAR);
             entries.add(BREEZE_PILLAR);
