@@ -125,3 +125,7 @@
 - Block of Feathers, crafted with and into 9 feathers, and functions identically to Hay Blocks, negating a heavy amount of fall damage
 - Packed Snow blocks, Cut Packed Ice blocks and Cut Blue Ice blocks, which can be made into stairs, slabs and walls
 - Blaze Rod Block, crafted from and into 9 Blaze Rods, is a pillar block and can be placed directionally, and gives out light
+- Added the Golden Potato, crafted by surrounding a Potato with Gold Ingots
+- Added the Enchanted Golden Potato, crafted shapelessly with a Golden Potato, Glowstone Dust and Blaze Powder
+- The Golden Potato when eaten gives Haste for 45 seconds
+- The Golden Potato when eaten gives Haste 2 for 22 seconds
