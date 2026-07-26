@@ -31,10 +31,8 @@ public class ModItems {
     public static Item RAW_FISH = register("raw_fish", Item::new, new Item.Settings().food(ModFoodComponents.RAW_FISH));
     public static Item COOKED_FISH = register("cooked_fish", Item::new, new Item.Settings().food(ModFoodComponents.COOKED_FISH));
 
-    //Potion Ingredient (eventually)
-    //Enchanted Golden Potato to be removed once Golden Potato becomes the ingredient for haste potions
-    public static Item GOLDEN_POTATO = register("golden_potato", Item::new, new Item.Settings().food(ModFoodComponents.GOLDEN_POTATO, ModConsumableComponents.GOLDEN_POTATO));
-    public static Item ENCHANTED_GOLDEN_POTATO = register("enchanted_golden_potato", Item::new, new Item.Settings().component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true).food(ModFoodComponents.ENCHANTED_GOLDEN_POTATO, ModConsumableComponents.ENCHANTED_GOLDEN_POTATO));
+    //Potion Ingredient
+    public static Item GOLDEN_POTATO = register("golden_potato", Item::new, new Item.Settings().food(ModFoodComponents.GOLDEN_POTATO));
 
     public static void registerItems() {
         SensibleInventoryTweaks.LOGGER.info("Registering items for " + SensibleInventoryTweaks.MOD_ID);
@@ -47,7 +45,10 @@ public class ModItems {
             entries.addAfter(Items.COOKED_SALMON, ModItems.RAW_FISH);
             entries.addAfter(ModItems.RAW_FISH, ModItems.COOKED_FISH);
             entries.addAfter(Items.POTATO, ModItems.GOLDEN_POTATO);
-            entries.addAfter(ModItems.GOLDEN_POTATO, ModItems.ENCHANTED_GOLDEN_POTATO);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.addAfter(Items.GOLDEN_CARROT, ModItems.GOLDEN_POTATO);
         });
     }
 }

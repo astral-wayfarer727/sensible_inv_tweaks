@@ -1,9 +1,9 @@
 {
-  "feature": "minecraft:crimson_fungus",
+  "feature": "sensible_inv_tweaks:large_crimson_fungus",
   "placement": [
     {
       "type": "minecraft:count_on_every_layer",
-      "count": 8
+      "count": 3
     },
     {
       "type": "minecraft:block_predicate_filter",

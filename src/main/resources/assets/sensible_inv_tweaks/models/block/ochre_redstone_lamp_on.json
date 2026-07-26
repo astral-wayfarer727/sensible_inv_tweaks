@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "sensible_inv_tweaks:block/ochre_redstone_lamp_on"
+  }
+}

@@ -15,6 +15,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "sensible_inv_tweaks:golden_potato",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:raw_iron_block"
         },
         {

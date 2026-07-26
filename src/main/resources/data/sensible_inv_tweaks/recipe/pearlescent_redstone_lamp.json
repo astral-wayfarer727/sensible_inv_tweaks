@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "F": "minecraft:pearlescent_froglight",
+    "R": "minecraft:redstone"
+  },
+  "pattern": [
+    " R ",
+    "RFR",
+    " R "
+  ],
+  "result": {
+    "count": 4,
+    "id": "sensible_inv_tweaks:pearlescent_redstone_lamp"
+  }
+}

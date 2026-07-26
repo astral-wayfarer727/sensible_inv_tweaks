@@ -16,7 +16,7 @@
           }
         },
         "directions": [
-          "down"
+          "up"
         ],
         "exclusion_radius_xz": 0,
         "exclusion_radius_y": 0,
@@ -40,14 +40,10 @@
       }
     },
     "foliage_placer": {
-      "type": "minecraft:cherry_foliage_placer",
-      "corner_hole_chance": 1.0,
-      "hanging_leaves_chance": 1.0,
-      "hanging_leaves_extension_chance": 0.0,
-      "height": 4,
-      "offset": 1,
-      "radius": 4,
-      "wide_bottom_layer_hole_chance": 1.0
+      "type": "minecraft:mega_pine_foliage_placer",
+      "crown_height": 6,
+      "offset": 0,
+      "radius": 0
     },
     "foliage_provider": {
       "type": "minecraft:weighted_state_provider",
@@ -78,14 +74,14 @@
     "ignore_vines": true,
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",
-      "limit": 2,
-      "lower_size": 2,
-      "upper_size": 2
+      "limit": 3,
+      "lower_size": 3,
+      "upper_size": 3
     },
     "trunk_placer": {
-      "type": "minecraft:straight_trunk_placer",
-      "base_height": 7,
-      "height_rand_a": 3,
+      "type": "minecraft:giant_trunk_placer",
+      "base_height": 18,
+      "height_rand_a": 2,
       "height_rand_b": 2
     },
     "trunk_provider": {

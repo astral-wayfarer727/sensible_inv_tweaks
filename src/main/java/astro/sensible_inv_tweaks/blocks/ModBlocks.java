@@ -44,10 +44,10 @@ public class ModBlocks {
             AbstractBlock.Settings.create().ticksRandomly().mapColor(MapColor.BRIGHT_TEAL).strength(0.5F).sounds(BlockSoundGroup.WART_BLOCK));
     public static Block CRIMSON_BUDDING_SHROOMLIGHT = register("crimson_budding_shroomlight",
             settings -> new UntintedParticleLeavesBlock(0.0f, ParticleTypes.CRIMSON_SPORE, settings),
-            AbstractBlock.Settings.create().ticksRandomly().mapColor(MapColor.RED).strength(1.0F).luminance(state -> 15).sounds(BlockSoundGroup.SHROOMLIGHT));
+            AbstractBlock.Settings.create().ticksRandomly().mapColor(MapColor.RED).strength(1.0F).luminance(state -> 12).sounds(BlockSoundGroup.SHROOMLIGHT));
     public static Block WARPED_BUDDING_SHROOMLIGHT = register("warped_budding_shroomlight",
             settings -> new UntintedParticleLeavesBlock(0.0f, ParticleTypes.WARPED_SPORE, settings),
-            AbstractBlock.Settings.create().ticksRandomly().mapColor(MapColor.BRIGHT_TEAL).strength(1.0F).luminance(state -> 15).sounds(BlockSoundGroup.SHROOMLIGHT));
+            AbstractBlock.Settings.create().ticksRandomly().mapColor(MapColor.BRIGHT_TEAL).strength(1.0F).luminance(state -> 12).sounds(BlockSoundGroup.SHROOMLIGHT));
 
     //Lapis Blockset
     public static Block LAPIS_STAIRS = register("lapis_stairs",
@@ -117,6 +117,20 @@ public class ModBlocks {
     public static WallBlock CUT_BLUE_ICE_WALL = (WallBlock) register("cut_blue_ice_wall",
             WallBlock::new, Block.Settings.copy(CUT_BLUE_ICE));
 
+    //Redstone Lamp Variants
+    public static final Block OCHRE_REDSTONE_LAMP = register("ochre_redstone_lamp",
+            RedstoneLampBlock::new, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_YELLOW).luminance(createLightLevelFromLitBlockState(15))
+                    .strength(0.3F).sounds(BlockSoundGroup.GLASS).allowsSpawning(Blocks::always));
+    public static final Block PEARLESCENT_REDSTONE_LAMP = register("pearlescent_redstone_lamp",
+            RedstoneLampBlock::new, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_PURPLE).luminance(createLightLevelFromLitBlockState(15))
+                    .strength(0.3F).sounds(BlockSoundGroup.GLASS).allowsSpawning(Blocks::always));
+    public static final Block SEA_REDSTONE_LAMP = register("sea_redstone_lamp",
+            RedstoneLampBlock::new, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_CYAN).luminance(createLightLevelFromLitBlockState(15))
+                    .strength(0.3F).sounds(BlockSoundGroup.GLASS).allowsSpawning(Blocks::always));
+    public static final Block VERDANT_REDSTONE_LAMP = register("verdant_redstone_lamp",
+            RedstoneLampBlock::new, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIME).luminance(createLightLevelFromLitBlockState(15))
+                    .strength(0.3F).sounds(BlockSoundGroup.GLASS).allowsSpawning(Blocks::always));
+
     public static void registerBlocks() {
         SensibleInventoryTweaks.LOGGER.info("Registering Blocks for " + SensibleInventoryTweaks.MOD_ID);
 
@@ -154,6 +168,10 @@ public class ModBlocks {
             entries.addAfter(ModBlocks.BLAZE_PILLAR, ModBlocks.BREEZE_PILLAR);
             entries.addAfter(Blocks.SUSPICIOUS_GRAVEL, ModBlocks.GUNPOWDER_BLOCK);
             entries.addAfter(ModBlocks.GUNPOWDER_BLOCK, ModBlocks.SUGAR_BLOCK);
+            entries.addAfter(Blocks.REDSTONE_LAMP, ModBlocks.OCHRE_REDSTONE_LAMP);
+            entries.addAfter(ModBlocks.OCHRE_REDSTONE_LAMP, ModBlocks.PEARLESCENT_REDSTONE_LAMP);
+            entries.addAfter(ModBlocks.PEARLESCENT_REDSTONE_LAMP, ModBlocks.SEA_REDSTONE_LAMP);
+            entries.addAfter(ModBlocks.SEA_REDSTONE_LAMP, ModBlocks.VERDANT_REDSTONE_LAMP);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.addAfter(Blocks.WARPED_WART_BLOCK, ModBlocks.CRIMSON_CAP);

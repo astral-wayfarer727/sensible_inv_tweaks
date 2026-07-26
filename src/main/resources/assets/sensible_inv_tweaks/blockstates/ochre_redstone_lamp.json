@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "sensible_inv_tweaks:block/ochre_redstone_lamp"
+    },
+    "lit=true": {
+      "model": "sensible_inv_tweaks:block/ochre_redstone_lamp_on"
+    }
+  }
+}

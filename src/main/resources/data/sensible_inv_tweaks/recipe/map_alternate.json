@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:ink_sac",
+    "minecraft:feather"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:map"
+  }
+}

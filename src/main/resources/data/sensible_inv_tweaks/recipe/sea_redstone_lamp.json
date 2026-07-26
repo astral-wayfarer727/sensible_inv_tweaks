@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "S": "minecraft:sea_lantern",
+    "R": "minecraft:redstone"
+  },
+  "pattern": [
+    " R ",
+    "RSR",
+    " R "
+  ],
+  "result": {
+    "count": 4,
+    "id": "sensible_inv_tweaks:sea_redstone_lamp"
+  }
+}

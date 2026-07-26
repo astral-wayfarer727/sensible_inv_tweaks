@@ -3,7 +3,7 @@
 	"package": "astro.sensible_inv_tweaks.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"TorchflowerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

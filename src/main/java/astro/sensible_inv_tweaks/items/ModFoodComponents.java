@@ -11,6 +11,5 @@ public class ModFoodComponents {
     public static final FoodComponent RAW_FISH = new FoodComponent.Builder().nutrition(2).saturationModifier(0.1F).build();
     public static final FoodComponent COOKED_FISH = new FoodComponent.Builder().nutrition(6).saturationModifier(0.8F).build();
 
-    public static final FoodComponent GOLDEN_POTATO = new FoodComponent.Builder().nutrition(4).saturationModifier(1.2F).alwaysEdible().build();
-    public static final FoodComponent ENCHANTED_GOLDEN_POTATO = new FoodComponent.Builder().nutrition(4).saturationModifier(1.2F).alwaysEdible().build();
+    public static final FoodComponent GOLDEN_POTATO = new FoodComponent.Builder().nutrition(6).saturationModifier(1.2F).build();
 }

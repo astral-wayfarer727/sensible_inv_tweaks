@@ -7,7 +7,15 @@
   "item.sensible_inv_tweaks.cooked_fish": "Cooked Fish",
 
   "item.sensible_inv_tweaks.golden_potato": "Golden Potato",
-  "item.sensible_inv_tweaks.enchanted_golden_potato": "Enchanted Golden Potato",
+  "item.minecraft.potion.effect.haste": "Potion of Haste",
+  "item.minecraft.splash_potion.effect.haste": "Splash Potion of Haste",
+  "item.minecraft.lingering_potion.effect.haste": "Lingering Potion of Haste",
+  "item.minecraft.potion.effect.mining_fatigue": "Potion of Mining Fatigue",
+  "item.minecraft.splash_potion.effect.mining_fatigue": "Splash Potion of Mining Fatigue",
+  "item.minecraft.lingering_potion.effect.mining_fatigue": "Lingering Potion of Mining Fatigue",
+  "item.minecraft.tipped_arrow.effect.haste": "Arrow of Haste",
+  "item.minecraft.tipped_arrow.effect.mining_fatigue": "Arrow of Mining Fatigue",
+
 
   "block.sensible_inv_tweaks.lapis_stairs": "Lapis Stairs",
   "block.sensible_inv_tweaks.lapis_slab": "Lapis Slab",
@@ -47,5 +55,10 @@
   "block.sensible_inv_tweaks.crimson_cap": "Crimson Cap",
   "block.sensible_inv_tweaks.warped_cap": "Warped Cap",
   "block.sensible_inv_tweaks.crimson_budding_shroomlight": "Crimson Budding Shroomlight",
-  "block.sensible_inv_tweaks.warped_budding_shroomlight": "Warped Budding Shroomlight"
+  "block.sensible_inv_tweaks.warped_budding_shroomlight": "Warped Budding Shroomlight",
+
+  "block.sensible_inv_tweaks.ochre_redstone_lamp": "Ochre Redstone Lamp",
+  "block.sensible_inv_tweaks.pearlescent_redstone_lamp": "Pearlescent Redstone Lamp",
+  "block.sensible_inv_tweaks.sea_redstone_lamp": "Sea Redstone Lamp",
+  "block.sensible_inv_tweaks.verdant_redstone_lamp": "Verdant Redstone Lamp"
 }

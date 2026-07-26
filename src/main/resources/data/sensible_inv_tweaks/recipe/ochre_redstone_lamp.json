@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "F": "minecraft:ochre_froglight",
+    "R": "minecraft:redstone"
+  },
+  "pattern": [
+    " R ",
+    "RFR",
+    " R "
+  ],
+  "result": {
+    "count": 4,
+    "id": "sensible_inv_tweaks:ochre_redstone_lamp"
+  }
+}

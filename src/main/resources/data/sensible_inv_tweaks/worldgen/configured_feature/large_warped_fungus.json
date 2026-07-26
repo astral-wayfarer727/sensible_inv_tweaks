@@ -5,15 +5,29 @@
       {
         "type": "minecraft:attached_to_leaves",
         "block_provider": {
-          "type": "minecraft:simple_state_provider",
-          "state": {
-            "Name": "sensible_inv_tweaks:crimson_cap",
-            "Properties": {
-              "distance": "7",
-              "persistent": "false",
-              "waterlogged": "false"
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "data": {
+                "Name": "sensible_inv_tweaks:warped_cap",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false"
+                }
+              },
+              "weight": 30
+            },
+            {
+              "data": {
+                "Name": "sensible_inv_tweaks:warped_budding_shroomlight",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false"
+                }
+              },
+              "weight": 1
             }
-          }
+          ]
         },
         "directions": [
           "down"
@@ -33,28 +47,24 @@
     "sapling_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:crimson_fungus",
+        "Name": "minecraft:warped_fungus",
         "Properties": {
           "stage": "0"
         }
       }
     },
     "foliage_placer": {
-      "type": "minecraft:cherry_foliage_placer",
-      "corner_hole_chance": 1.0,
-      "hanging_leaves_chance": 1.0,
-      "hanging_leaves_extension_chance": 0.0,
-      "height": 4,
-      "offset": 1,
-      "radius": 4,
-      "wide_bottom_layer_hole_chance": 1.0
+      "type": "minecraft:jungle_foliage_placer",
+      "height": 1,
+      "offset": 0,
+      "radius": 2
     },
     "foliage_provider": {
       "type": "minecraft:weighted_state_provider",
       "entries": [
         {
           "data": {
-            "Name": "sensible_inv_tweaks:crimson_cap",
+            "Name": "sensible_inv_tweaks:warped_cap",
             "Properties": {
               "distance": "7",
               "persistent": "false"
@@ -64,7 +74,7 @@
         },
         {
           "data": {
-            "Name": "sensible_inv_tweaks:crimson_budding_shroomlight",
+            "Name": "sensible_inv_tweaks:warped_budding_shroomlight",
             "Properties": {
               "distance": "7",
               "persistent": "false"
@@ -78,20 +88,20 @@
     "ignore_vines": true,
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",
-      "limit": 2,
-      "lower_size": 2,
-      "upper_size": 2
+      "limit": 3,
+      "lower_size": 3,
+      "upper_size": 3
     },
     "trunk_placer": {
-      "type": "minecraft:straight_trunk_placer",
-      "base_height": 7,
-      "height_rand_a": 3,
+      "type": "minecraft:giant_trunk_placer",
+      "base_height": 16,
+      "height_rand_a": 2,
       "height_rand_b": 2
     },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:crimson_stem",
+        "Name": "minecraft:warped_stem",
         "Properties": {
           "axis": "y"
         }
