@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "sensible_inv_tweaks:apple_sack"
+  ],
+  "result": {
+    "id": "minecraft:apple",
+    "count": 9
+  }
+}

@@ -6,7 +6,7 @@
     "###"
   ],
   "key": {
-    "#": "minecraft:oak_planks"
+    "#": "#minecraft:planks"
   },
   "result": {
     "id": "minecraft:chiseled_bookshelf",

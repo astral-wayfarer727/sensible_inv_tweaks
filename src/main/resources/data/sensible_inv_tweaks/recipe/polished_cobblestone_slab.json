@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "sensible_inv_tweaks:polished_cobblestone"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:polished_cobblestone_slab",
+    "count": 6
+  }
+}

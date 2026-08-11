@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 96,
+    "xz_spread": 4,
+    "y_spread": 2,
+    "feature": {
+      "feature": {
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 9,
+                "data": {
+                  "Name": "minecraft:nether_wart"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "sensible_inv_tweaks:warped_wart_crop"
+                }
+              }
+            ]
+          }
+        },
+        "type": "minecraft:simple_block"
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:would_survive",
+            "state": {
+              "Name": "minecraft:nether_wart"
+            }
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "#minecraft:air"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,6 +1,27 @@
 {
+  "replace": false,
   "values": [
     "sensible_inv_tweaks:blaze_pillar",
-    "sensible_inv_tweaks:breeze_pillar"
+    "sensible_inv_tweaks:breeze_pillar",
+    "sensible_inv_tweaks:emerald_bricks",
+    "sensible_inv_tweaks:emerald_brick_stairs",
+    "sensible_inv_tweaks:emerald_brick_slab",
+    "sensible_inv_tweaks:emerald_brick_wall",
+    "sensible_inv_tweaks:diamond_bricks",
+    "sensible_inv_tweaks:diamond_brick_stairs",
+    "sensible_inv_tweaks:diamond_brick_slab",
+    "sensible_inv_tweaks:diamond_brick_wall",
+    "sensible_inv_tweaks:gold_bricks",
+    "sensible_inv_tweaks:gold_brick_stairs",
+    "sensible_inv_tweaks:gold_brick_slab",
+    "sensible_inv_tweaks:gold_brick_wall",
+    "sensible_inv_tweaks:iron_bricks",
+    "sensible_inv_tweaks:iron_brick_stairs",
+    "sensible_inv_tweaks:iron_brick_slab",
+    "sensible_inv_tweaks:iron_brick_wall",
+    "sensible_inv_tweaks:chiseled_emerald_bricks",
+    "sensible_inv_tweaks:chiseled_diamond_bricks",
+    "sensible_inv_tweaks:chiseled_gold_bricks",
+    "sensible_inv_tweaks:chiseled_iron_bricks"
   ]
 }

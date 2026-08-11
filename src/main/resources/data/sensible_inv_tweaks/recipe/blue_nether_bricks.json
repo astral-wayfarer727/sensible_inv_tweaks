@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#W#",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:nether_bricks",
+    "W": "sensible_inv_tweaks:warped_wart"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:blue_nether_bricks",
+    "count": 8
+  }
+}

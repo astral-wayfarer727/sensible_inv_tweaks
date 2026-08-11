@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "sensible_inv_tweaks:netherite_bricks",
+    "sensible_inv_tweaks:emerald_bricks",
+    "sensible_inv_tweaks:diamond_bricks",
+    "sensible_inv_tweaks:gold_bricks",
+    "sensible_inv_tweaks:iron_bricks",
+    "sensible_inv_tweaks:chiseled_netherite_bricks",
+    "sensible_inv_tweaks:chiseled_emerald_bricks",
+    "sensible_inv_tweaks:chiseled_diamond_bricks",
+    "sensible_inv_tweaks:chiseled_gold_bricks",
+    "sensible_inv_tweaks:chiseled_iron_bricks"
+  ]
+}

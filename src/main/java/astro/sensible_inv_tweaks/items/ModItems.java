@@ -1,8 +1,11 @@
 package astro.sensible_inv_tweaks.items;
 
 import astro.sensible_inv_tweaks.SensibleInventoryTweaks;
+import astro.sensible_inv_tweaks.blocks.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.component.DataComponentTypes;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
@@ -22,6 +25,13 @@ public class ModItems {
         Registry.register(Registries.ITEM, itemKey, item);
         return item;
     }
+
+    //Warped Wart
+    private static Function<Item.Settings, Item> createBlockItemWithUniqueName(Block block) {
+        return settings -> new BlockItem(block, settings.useItemPrefixedTranslationKey());
+    }
+
+    public static Item WARPED_WART = register("warped_wart", createBlockItemWithUniqueName(ModBlocks.WARPED_WART_CROP), new Item.Settings());
 
     //Replacement Food Items
     public static Item RAW_FLANK = register("raw_flank", Item::new, new Item.Settings().food(ModFoodComponents.RAW_FLANK));
@@ -47,8 +57,13 @@ public class ModItems {
             entries.addAfter(Items.POTATO, ModItems.GOLDEN_POTATO);
         });
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.addAfter(Items.NETHER_WART, ModItems.WARPED_WART);
+        });
+
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.addAfter(Items.GOLDEN_CARROT, ModItems.GOLDEN_POTATO);
+            entries.addAfter(Items.NETHER_WART, ModItems.WARPED_WART);
         });
     }
 }

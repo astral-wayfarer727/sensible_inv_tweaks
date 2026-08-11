@@ -65,7 +65,8 @@
       "minecraft:weeping_vines",
       "minecraft:crimson_fungi",
       "sensible_inv_tweaks:large_crimson_fungi",
-      "minecraft:crimson_forest_vegetation"
+      "minecraft:crimson_forest_vegetation",
+      "sensible_inv_tweaks:patch_wild_wart"
     ]
   ],
   "has_precipitation": false,

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": "minecraft:black_dye",
+    "P": "minecraft:prismarine"
+  },
+  "pattern": [
+    "PPP",
+    "PIP",
+    "PPP"
+  ],
+  "result": {
+    "count": 8,
+    "id": "minecraft:dark_prismarine"
+  }
+}

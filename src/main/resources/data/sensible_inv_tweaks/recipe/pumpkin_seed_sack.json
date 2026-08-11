@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:pumpkin_seeds"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:pumpkin_seed_sack"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:glistering_melon_slice",
+    "minecraft:glistering_melon_slice",
+    "minecraft:glistering_melon_slice",
+    "minecraft:glistering_melon_slice",
+    "minecraft:glistering_melon_slice",
+    "minecraft:glistering_melon_slice",
+    "minecraft:glistering_melon_slice",
+    "minecraft:glistering_melon_slice",
+    "minecraft:glistering_melon_slice"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sensible_inv_tweaks:glistering_melon"
+  }
+}

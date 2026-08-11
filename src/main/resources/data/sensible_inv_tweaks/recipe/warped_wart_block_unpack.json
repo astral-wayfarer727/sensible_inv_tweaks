@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:warped_wart_block"
+  ],
+  "result": {
+    "id": "sensible_inv_tweaks:warped_wart",
+    "count": 9
+  }
+}

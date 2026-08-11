@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:melon_seeds"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:melon_seed_sack"
+  }
+}

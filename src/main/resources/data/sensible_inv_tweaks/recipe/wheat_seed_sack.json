@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:wheat_seeds"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:wheat_seed_sack"
+  }
+}

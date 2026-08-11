@@ -67,7 +67,8 @@
       "sensible_inv_tweaks:large_warped_fungi",
       "minecraft:warped_forest_vegetation",
       "minecraft:nether_sprouts",
-      "minecraft:twisting_vines"
+      "minecraft:twisting_vines",
+      "sensible_inv_tweaks:patch_wild_wart"
     ]
   ],
   "has_precipitation": false,

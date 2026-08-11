@@ -6,6 +6,8 @@
   "item.sensible_inv_tweaks.raw_fish": "Raw Fish",
   "item.sensible_inv_tweaks.cooked_fish": "Cooked Fish",
 
+  "item.sensible_inv_tweaks.warped_wart": "Warped Wart",
+
   "item.sensible_inv_tweaks.golden_potato": "Golden Potato",
   "item.minecraft.potion.effect.haste": "Potion of Haste",
   "item.minecraft.splash_potion.effect.haste": "Splash Potion of Haste",
@@ -27,11 +29,60 @@
   "block.sensible_inv_tweaks.smooth_lapis_stairs": "Smooth Lapis Stairs",
   "block.sensible_inv_tweaks.smooth_lapis_slab": "Smooth Lapis Slab",
 
+  "block.sensible_inv_tweaks.iron_bricks": "Iron Bricks",
+  "block.sensible_inv_tweaks.chiseled_iron_bricks": "Chiseled Iron Bricks",
+  "block.sensible_inv_tweaks.iron_brick_stairs": "Iron Brick Stairs",
+  "block.sensible_inv_tweaks.iron_brick_slab": "Iron Brick Slab",
+  "block.sensible_inv_tweaks.iron_brick_wall": "Iron Brick Wall",
+
+  "block.sensible_inv_tweaks.gold_bricks": "Gold Bricks",
+  "block.sensible_inv_tweaks.chiseled_gold_bricks": "Chiseled Gold Bricks",
+  "block.sensible_inv_tweaks.gold_brick_stairs": "Gold Brick Stairs",
+  "block.sensible_inv_tweaks.gold_brick_slab": "Gold Brick Slab",
+  "block.sensible_inv_tweaks.gold_brick_wall": "Gold Brick Wall",
+
+  "block.sensible_inv_tweaks.emerald_bricks": "Emerald Bricks",
+  "block.sensible_inv_tweaks.chiseled_emerald_bricks": "Chiseled Emerald Bricks",
+  "block.sensible_inv_tweaks.emerald_brick_stairs": "Emerald Brick Stairs",
+  "block.sensible_inv_tweaks.emerald_brick_slab": "Emerald Brick Slab",
+  "block.sensible_inv_tweaks.emerald_brick_wall": "Emerald Brick Wall",
+
+  "block.sensible_inv_tweaks.diamond_bricks": "Diamond Bricks",
+  "block.sensible_inv_tweaks.chiseled_diamond_bricks": "Chiseled Diamond Bricks",
+  "block.sensible_inv_tweaks.diamond_brick_stairs": "Diamond Brick Stairs",
+  "block.sensible_inv_tweaks.diamond_brick_slab": "Diamond Brick Slab",
+  "block.sensible_inv_tweaks.diamond_brick_wall": "Diamond Brick Wall",
+
+  "block.sensible_inv_tweaks.netherite_bricks": "Netherite Bricks",
+  "block.sensible_inv_tweaks.chiseled_netherite_bricks": "Chiseled Netherite Bricks",
+  "block.sensible_inv_tweaks.netherite_brick_stairs": "Netherite Brick Stairs",
+  "block.sensible_inv_tweaks.netherite_brick_slab": "Netherite Brick Slab",
+  "block.sensible_inv_tweaks.netherite_brick_wall": "Netherite Brick Wall",
+
+  "block.sensible_inv_tweaks.polished_cobblestone": "Polished Cobblestone",
+  "block.sensible_inv_tweaks.polished_cobblestone_stairs": "Polished Cobblestone Stairs",
+  "block.sensible_inv_tweaks.polished_cobblestone_slab": "Polished Cobblestone Slab",
+  "block.sensible_inv_tweaks.polished_cobblestone_wall": "Polished Cobblestone Wall",
+
   "block.sensible_inv_tweaks.blaze_pillar": "Blaze Rod Pillar",
   "block.sensible_inv_tweaks.breeze_pillar": "Breeze Rod Pillar",
   "block.sensible_inv_tweaks.feather_block": "Block of Feathers",
   "block.sensible_inv_tweaks.gunpowder_block": "Block of Gunpowder",
   "block.sensible_inv_tweaks.sugar_block": "Block of Sugar",
+
+  "block.sensible_inv_tweaks.bundled_thatch": "Bundled Thatch",
+  "block.sensible_inv_tweaks.thatch": "Thatch",
+  "block.sensible_inv_tweaks.thatch_stairs": "Thatch Stairs",
+  "block.sensible_inv_tweaks.thatch_slab": "Thatch Slab",
+  "block.sensible_inv_tweaks.thatch_wall": "Thatch Wall",
+
+  "block.sensible_inv_tweaks.wheat_seed_sack": "Sack of Wheat Seeds",
+  "block.sensible_inv_tweaks.pumpkin_seed_sack": "Sack of Pumpkin Seeds",
+  "block.sensible_inv_tweaks.melon_seed_sack": "Sack of Melon Seeds",
+  "block.sensible_inv_tweaks.potato_sack": "Sack of Potatoes",
+  "block.sensible_inv_tweaks.carrot_sack": "Sack of Carrots",
+  "block.sensible_inv_tweaks.apple_sack": "Sack of Apples",
+  "block.sensible_inv_tweaks.glistering_melon": "Glistering Melon",
 
   "block.sensible_inv_tweaks.packed_snow": "Packed Snow",
   "block.sensible_inv_tweaks.packed_snow_stairs": "Packed Snow Stairs",
@@ -51,6 +102,14 @@
   "block.sensible_inv_tweaks.red_nether_brick_fence": "Red Nether Brick Fence",
   "block.sensible_inv_tweaks.red_chiseled_nether_bricks": "Red Chiseled Nether Bricks",
   "block.sensible_inv_tweaks.red_cracked_nether_bricks": "Red Cracked Nether Bricks",
+
+  "block.sensible_inv_tweaks.blue_nether_bricks": "Blue Nether Bricks",
+  "block.sensible_inv_tweaks.blue_nether_brick_stairs": "Blue Nether Brick Stairs",
+  "block.sensible_inv_tweaks.blue_nether_brick_slab": "Blue Nether Brick Slab",
+  "block.sensible_inv_tweaks.blue_nether_brick_wall": "Blue Nether Brick Wall",
+  "block.sensible_inv_tweaks.blue_nether_brick_fence": "Blue Nether Brick Fence",
+  "block.sensible_inv_tweaks.blue_chiseled_nether_bricks": "Blue Chiseled Nether Bricks",
+  "block.sensible_inv_tweaks.blue_cracked_nether_bricks": "Blue Cracked Nether Bricks",
 
   "block.sensible_inv_tweaks.crimson_cap": "Crimson Cap",
   "block.sensible_inv_tweaks.warped_cap": "Warped Cap",

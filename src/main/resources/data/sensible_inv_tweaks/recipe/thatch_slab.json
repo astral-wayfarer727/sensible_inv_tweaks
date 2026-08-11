@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "sensible_inv_tweaks:thatch"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:thatch_slab",
+    "count": 6
+  }
+}

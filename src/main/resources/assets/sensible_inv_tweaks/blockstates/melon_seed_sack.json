@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "sensible_inv_tweaks:block/melon_seed_sack",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "sensible_inv_tweaks:block/melon_seed_sack"
+    },
+    "facing=south": {
+      "model": "sensible_inv_tweaks:block/melon_seed_sack",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sensible_inv_tweaks:block/melon_seed_sack",
+      "y": 270
+    }
+  }
+}

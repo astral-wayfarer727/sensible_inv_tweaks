@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "sensible_inv_tweaks:netherite_bricks",
+    "sensible_inv_tweaks:netherite_brick_stairs",
+    "sensible_inv_tweaks:netherite_brick_slab",
+    "sensible_inv_tweaks:netherite_brick_wall",
+    "sensible_inv_tweaks:chiseled_netherite_bricks"
+  ]
+}

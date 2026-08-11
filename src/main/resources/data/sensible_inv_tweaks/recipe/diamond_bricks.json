@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:diamond_block"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:diamond_bricks",
+    "count": 4
+  }
+}

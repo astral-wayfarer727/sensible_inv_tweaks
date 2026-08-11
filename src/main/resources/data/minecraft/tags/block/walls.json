@@ -2,6 +2,14 @@
   "values": [
     "sensible_inv_tweaks:packed_snow_wall",
     "sensible_inv_tweaks:cut_packed_ice_wall",
-    "sensible_inv_tweaks:cut_blue_ice_wall"
+    "sensible_inv_tweaks:cut_blue_ice_wall",
+    "sensible_inv_tweaks:thatch_wall",
+    "sensible_inv_tweaks:emerald_brick_wall",
+    "sensible_inv_tweaks:diamond_brick_wall",
+    "sensible_inv_tweaks:netherite_brick_wall",
+    "sensible_inv_tweaks:gold_brick_wall",
+    "sensible_inv_tweaks:iron_brick_wall",
+    "sensible_inv_tweaks:blue_nether_brick_wall",
+    "sensible_inv_tweaks:polished_cobblestone_wall"
   ]
 }

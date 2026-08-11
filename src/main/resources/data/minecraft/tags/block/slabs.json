@@ -4,6 +4,14 @@
     "sensible_inv_tweaks:cut_packed_ice_slab",
     "sensible_inv_tweaks:cut_blue_ice_slab",
     "sensible_inv_tweaks:lapis_slab",
-    "sensible_inv_tweaks:smooth_lapis_slab"
+    "sensible_inv_tweaks:smooth_lapis_slab",
+    "sensible_inv_tweaks:thatch_slab",
+    "sensible_inv_tweaks:emerald_brick_slab",
+    "sensible_inv_tweaks:diamond_brick_slab",
+    "sensible_inv_tweaks:netherite_brick_slab",
+    "sensible_inv_tweaks:gold_brick_slab",
+    "sensible_inv_tweaks:iron_brick_slab",
+    "sensible_inv_tweaks:blue_nether_brick_slab",
+    "sensible_inv_tweaks:polished_cobblestone_slab"
   ]
 }

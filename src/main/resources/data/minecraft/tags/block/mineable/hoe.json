@@ -5,6 +5,12 @@
     "sensible_inv_tweaks:warped_cap",
     "sensible_inv_tweaks:crimson_budding_shroomlight",
     "sensible_inv_tweaks:warped_budding_shroomlight",
+    "sensible_inv_tweaks:bundled_thatch",
+    "sensible_inv_tweaks:thatch",
+    "sensible_inv_tweaks:thatch_stairs",
+    "sensible_inv_tweaks:thatch_slab",
+    "sensible_inv_tweaks:thatch_wall",
+    "#sensible_inv_tweaks:sacks",
     "minecraft:ochre_froglight",
     "minecraft:pearlescent_froglight",
     "minecraft:verdant_froglight"

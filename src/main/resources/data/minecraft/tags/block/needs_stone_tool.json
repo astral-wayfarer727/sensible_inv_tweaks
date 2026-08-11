@@ -1,4 +1,5 @@
 {
+  "replace": false,
   "values": [
     "sensible_inv_tweaks:lapis_bricks",
     "sensible_inv_tweaks:lapis_stairs",

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:carrot"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:carrot_sack"
+  }
+}

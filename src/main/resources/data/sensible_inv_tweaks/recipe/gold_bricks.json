@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:gold_block"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:gold_bricks",
+    "count": 4
+  }
+}

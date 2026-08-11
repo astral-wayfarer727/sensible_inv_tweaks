@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": "sensible_inv_tweaks:gold_bricks"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:chiseled_gold_bricks",
+    "count": 2
+  }
+}

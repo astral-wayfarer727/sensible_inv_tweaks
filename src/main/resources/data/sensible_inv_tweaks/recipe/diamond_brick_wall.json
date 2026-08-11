@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sensible_inv_tweaks:diamond_bricks"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:diamond_brick_wall",
+    "count": 6
+  }
+}

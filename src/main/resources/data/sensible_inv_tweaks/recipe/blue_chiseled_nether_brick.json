@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "sensible_inv_tweaks:blue_nether_bricks",
+  "result": {
+    "id": "sensible_inv_tweaks:blue_chiseled_nether_bricks"
+  }
+}

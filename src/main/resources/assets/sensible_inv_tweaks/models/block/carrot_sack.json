@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "sensible_inv_tweaks:block/carrot_sack_front",
+    "side": "sensible_inv_tweaks:block/carrot_sack_side",
+    "top": "sensible_inv_tweaks:block/carrot_sack_top",
+    "bottom": "sensible_inv_tweaks:block/sack_bottom"
+  }
+}

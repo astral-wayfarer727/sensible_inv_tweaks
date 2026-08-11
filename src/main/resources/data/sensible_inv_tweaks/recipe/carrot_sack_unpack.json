@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "sensible_inv_tweaks:carrot_sack"
+  ],
+  "result": {
+    "id": "minecraft:carrot",
+    "count": 9
+  }
+}
