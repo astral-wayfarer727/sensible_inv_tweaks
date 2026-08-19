@@ -109,6 +109,10 @@ public class SensibleInventoryModelProvider extends FabricModelProvider {
         blueIcePool.stairs(ModBlocks.CUT_BLUE_ICE_STAIRS);
         blueIcePool.slab(ModBlocks.CUT_BLUE_ICE_SLAB);
         blueIcePool.wall(ModBlocks.CUT_BLUE_ICE_WALL);
+
+        //Misc
+        blockStateModelGenerator.registerGlassAndPane(ModBlocks.FRAMED_GLASS, ModBlocks.FRAMED_GLASS_PANE);
+        blockStateModelGenerator.registerTorch(ModBlocks.GLOWSTICK, ModBlocks.WALL_GLOWSTICK);
     }
 
     @Override

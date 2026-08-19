@@ -43,7 +43,7 @@ public class GlisteringMelonBlock extends HorizontalFacingBlock {
             double y = pos.getY() + 0.5 + offsetY;
             double z = pos.getZ() + 0.5 + offsetZ;
 
-            world.addParticleClient(ParticleTypes.WAX_ON, x, y, z, 0.0, 0.0, 0.0);
+            world.addParticleClient(ParticleTypes.WAX_ON, x, y, z, 0.1, 0.1, 0.1);
         }
     }
 

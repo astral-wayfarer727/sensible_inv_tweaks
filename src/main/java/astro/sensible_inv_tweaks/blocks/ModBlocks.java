@@ -11,6 +11,7 @@ import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.ColorCode;
 import net.minecraft.util.Identifier;
 import org.spongepowered.include.com.google.common.base.Function;
@@ -252,6 +253,23 @@ public class ModBlocks {
             RedstoneLampBlock::new, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIME).luminance(createLightLevelFromLitBlockState(15))
                     .strength(0.3F).sounds(BlockSoundGroup.GLASS).allowsSpawning(Blocks::always));
 
+    //Misc
+    public static final Block FRAMED_GLASS = register("framed_glass",
+            TransparentBlock::new, AbstractBlock.Settings.create().instrument(NoteBlockInstrument.HAT).strength(1.0F, 6.0F).sounds(BlockSoundGroup.GLASS).nonOpaque()
+                    .allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never));
+    public static final Block FRAMED_GLASS_PANE = register("framed_glass_pane",
+            PaneBlock::new, AbstractBlock.Settings.create().instrument(NoteBlockInstrument.HAT).strength(1.0F, 6.0F).sounds(BlockSoundGroup.GLASS).nonOpaque());
+
+    public static final Block GLOWSTICK = register("glowstick",
+            GlowstickBlock::new,
+            AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> state.get(Properties.WATERLOGGED) ? 14 : 0).sounds(BlockSoundGroup.SLIME).pistonBehavior(PistonBehavior.DESTROY)
+    );
+    public static final Block WALL_GLOWSTICK = register(
+            "wall_glowstick",
+            WallGlowstickBlock::new,
+            AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> state.get(Properties.WATERLOGGED) ? 14 : 0).sounds(BlockSoundGroup.SLIME).pistonBehavior(PistonBehavior.DESTROY)
+    );
+
     public static void registerBlocks() {
         SensibleInventoryTweaks.LOGGER.info("Registering Blocks for " + SensibleInventoryTweaks.MOD_ID);
 
@@ -343,6 +361,9 @@ public class ModBlocks {
             entries.addAfter(ModBlocks.MELON_SEED_SACK, ModBlocks.POTATO_SACK);
             entries.addAfter(ModBlocks.POTATO_SACK, ModBlocks.CARROT_SACK);
             entries.addAfter(ModBlocks.CARROT_SACK, ModBlocks.APPLE_SACK);
+
+            entries.addAfter(Blocks.TINTED_GLASS, ModBlocks.FRAMED_GLASS);
+            entries.addAfter(ModBlocks.FRAMED_GLASS, ModBlocks.FRAMED_GLASS_PANE);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.addAfter(Blocks.WARPED_WART_BLOCK, ModBlocks.CRIMSON_CAP);

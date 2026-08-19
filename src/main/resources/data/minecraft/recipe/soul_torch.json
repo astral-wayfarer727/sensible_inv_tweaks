@@ -1,20 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "X",
-    "#",
-    "="
-  ],
+  "category": "misc",
   "key": {
     "#": "minecraft:stick",
-    "=": "minecraft:copper_ingot",
+    "S": "#minecraft:soul_fire_base_blocks",
     "X": [
       "minecraft:coal",
       "minecraft:charcoal"
     ]
   },
+  "pattern": [
+    "X",
+    "#",
+    "S"
+  ],
   "result": {
-    "id": "minecraft:copper_torch",
-    "count": 8
+    "count": 8,
+    "id": "minecraft:soul_torch"
   }
 }

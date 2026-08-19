@@ -18,6 +18,8 @@
   "item.minecraft.tipped_arrow.effect.haste": "Arrow of Haste",
   "item.minecraft.tipped_arrow.effect.mining_fatigue": "Arrow of Mining Fatigue",
 
+  "item.sensible_inv_tweaks.glowstick_item": "Glowstick",
+
 
   "block.sensible_inv_tweaks.lapis_stairs": "Lapis Stairs",
   "block.sensible_inv_tweaks.lapis_slab": "Lapis Slab",
@@ -119,5 +121,10 @@
   "block.sensible_inv_tweaks.ochre_redstone_lamp": "Ochre Redstone Lamp",
   "block.sensible_inv_tweaks.pearlescent_redstone_lamp": "Pearlescent Redstone Lamp",
   "block.sensible_inv_tweaks.sea_redstone_lamp": "Sea Redstone Lamp",
-  "block.sensible_inv_tweaks.verdant_redstone_lamp": "Verdant Redstone Lamp"
+  "block.sensible_inv_tweaks.verdant_redstone_lamp": "Verdant Redstone Lamp",
+
+  "block.sensible_inv_tweaks.framed_glass": "Framed Glass",
+  "block.sensible_inv_tweaks.framed_glass_pane": "Framed Glass Pane",
+  "block.sensible_inv_tweaks.glowstick": "Glowstick",
+  "block.sensible_inv_tweaks.wall_glowstick": "Wall Glowstick"
 }

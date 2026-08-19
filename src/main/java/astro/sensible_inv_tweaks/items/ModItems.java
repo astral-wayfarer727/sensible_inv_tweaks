@@ -4,17 +4,15 @@ import astro.sensible_inv_tweaks.SensibleInventoryTweaks;
 import astro.sensible_inv_tweaks.blocks.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 
+import java.util.function.BiFunction;
 import java.util.function.Function;
 
 public class ModItems {
@@ -44,6 +42,9 @@ public class ModItems {
     //Potion Ingredient
     public static Item GOLDEN_POTATO = register("golden_potato", Item::new, new Item.Settings().food(ModFoodComponents.GOLDEN_POTATO));
 
+    //Glowstick
+    public static Item GLOWSTICK = register("glowstick_item", (properties) -> new VerticallyAttachableBlockItem(ModBlocks.GLOWSTICK, ModBlocks.WALL_GLOWSTICK, Direction.DOWN, properties), new Item.Settings());
+
     public static void registerItems() {
         SensibleInventoryTweaks.LOGGER.info("Registering items for " + SensibleInventoryTweaks.MOD_ID);
 
@@ -59,6 +60,10 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.addAfter(Items.NETHER_WART, ModItems.WARPED_WART);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
+            entries.addAfter(Items.REDSTONE_TORCH, ModItems.GLOWSTICK);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {

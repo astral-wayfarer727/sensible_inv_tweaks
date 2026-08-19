@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#=#",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:glass",
+    "=": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:framed_glass",
+    "count": 8
+  }
+}

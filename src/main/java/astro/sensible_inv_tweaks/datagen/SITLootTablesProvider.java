@@ -63,6 +63,11 @@ public class SITLootTablesProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.POLISHED_COBBLESTONE_WALL);
         addDrop(ModBlocks.POLISHED_COBBLESTONE_SLAB, slabDrops(ModBlocks.POLISHED_COBBLESTONE_SLAB));
 
+        addDrop(ModBlocks.FRAMED_GLASS);
+        addDrop(ModBlocks.FRAMED_GLASS_PANE);
+        addDrop(ModBlocks.GLOWSTICK);
+        addDrop(ModBlocks.WALL_GLOWSTICK, drops(ModBlocks.GLOWSTICK));
+
         addDrop(ModBlocks.WHEAT_SEED_SACK);
         addDrop(ModBlocks.APPLE_SACK);
         addDrop(ModBlocks.CARROT_SACK);
