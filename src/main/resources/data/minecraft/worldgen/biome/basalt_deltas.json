@@ -63,6 +63,7 @@
       "minecraft:ore_quartz_deltas",
       "minecraft:ore_ancient_debris_large",
       "minecraft:ore_debris_small",
+      "sensible_inv_tweaks:gunpowder_blob",
       "sensible_inv_tweaks:patch_wild_wart"
     ]
   ],

@@ -173,10 +173,10 @@ public class ModBlocks {
     public static Block FEATHER_BLOCK = register("feather_block",
             HayBlock::new, AbstractBlock.Settings.copy(HAY_BLOCK).mapColor(MapColor.WHITE).sounds(BlockSoundGroup.WOOL));
     public static Block GUNPOWDER_BLOCK = register("gunpowder_block",
-            settings -> new ColoredFallingBlock(new ColorCode(-8356741), settings),
+            settings -> new GunpowderBlock(new ColorCode(1768648059), settings),
             AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND));
     public static Block SUGAR_BLOCK = register("sugar_block",
-            settings -> new ColoredFallingBlock(new ColorCode(-8356741), settings),
+            settings -> new ColoredFallingBlock(new ColorCode(-555884033), settings),
             AbstractBlock.Settings.create().mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND));
 
     public static Block BUNDLED_THATCH = register("bundled_thatch",
