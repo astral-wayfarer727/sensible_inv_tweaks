@@ -6,7 +6,6 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.data.*;
-import net.minecraft.util.Identifier;
 
 public class SensibleInventoryModelProvider extends FabricModelProvider {
     public SensibleInventoryModelProvider(FabricDataOutput output) {
@@ -41,27 +40,6 @@ public class SensibleInventoryModelProvider extends FabricModelProvider {
         thatchPool.stairs(ModBlocks.THATCH_STAIRS);
         thatchPool.slab(ModBlocks.THATCH_SLAB);
         thatchPool.wall(ModBlocks.THATCH_WALL);
-
-        //Red Nether Brick Extras
-        BlockStateModelGenerator.BlockTexturePool redNetherBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.RED_NETHER_BRICKS);
-        redNetherBrickPool.fence(ModBlocks.RED_NETHER_BRICK_FENCE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_CHISELED_NETHER_BRICKS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_CRACKED_NETHER_BRICKS);
-
-        //Blue Nether Bricks
-        BlockStateModelGenerator.BlockTexturePool blueNetherBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLUE_NETHER_BRICKS);
-        blueNetherBrickPool.stairs(ModBlocks.BLUE_NETHER_BRICK_STAIRS);
-        blueNetherBrickPool.slab(ModBlocks.BLUE_NETHER_BRICK_SLAB);
-        blueNetherBrickPool.wall(ModBlocks.BLUE_NETHER_BRICK_WALL);
-        blueNetherBrickPool.fence(ModBlocks.BLUE_NETHER_BRICK_FENCE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_CHISELED_NETHER_BRICKS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_CRACKED_NETHER_BRICKS);
-
-        //Nether Foliage
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRIMSON_CAP);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WARPED_CAP);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRIMSON_BUDDING_SHROOMLIGHT);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WARPED_BUDDING_SHROOMLIGHT);
 
         //Metal Decoration Blocks
         BlockStateModelGenerator.BlockTexturePool ironBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.IRON_BRICKS);
@@ -117,13 +95,15 @@ public class SensibleInventoryModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.BUTCHER_KNIFE, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.RAW_FLANK, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_FLANK, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_HAUNCH, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_HAUNCH, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_FISH, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_FISH, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.GOLDEN_POTATO, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WARPED_WART, Models.GENERATED);
     }
 }

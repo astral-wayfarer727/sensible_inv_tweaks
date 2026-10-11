@@ -24,14 +24,9 @@ public class ModItems {
         return item;
     }
 
-    //Warped Wart
-    private static Function<Item.Settings, Item> createBlockItemWithUniqueName(Block block) {
-        return settings -> new BlockItem(block, settings.useItemPrefixedTranslationKey());
-    }
-
-    public static Item WARPED_WART = register("warped_wart", createBlockItemWithUniqueName(ModBlocks.WARPED_WART_CROP), new Item.Settings());
-
     //Replacement Food Items
+    public static Item BUTCHER_KNIFE = register("butcher_knife", Item::new, new Item.Settings().sword(ToolMaterial.IRON, 3.0F, -2.4F));
+
     public static Item RAW_FLANK = register("raw_flank", Item::new, new Item.Settings().food(ModFoodComponents.RAW_FLANK));
     public static Item COOKED_FLANK = register("cooked_flank", Item::new, new Item.Settings().food(ModFoodComponents.COOKED_FLANK));
     public static Item RAW_HAUNCH = register("raw_haunch", Item::new, new Item.Settings().food(ModFoodComponents.RAW_HAUNCH));
@@ -58,17 +53,16 @@ public class ModItems {
             entries.addAfter(Items.POTATO, ModItems.GOLDEN_POTATO);
         });
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
-            entries.addAfter(Items.NETHER_WART, ModItems.WARPED_WART);
-        });
-
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
             entries.addAfter(Items.REDSTONE_TORCH, ModItems.GLOWSTICK);
         });
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+            entries.addAfter(Items.SHEARS, ModItems.BUTCHER_KNIFE);
+        });
+
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.addAfter(Items.GOLDEN_CARROT, ModItems.GOLDEN_POTATO);
-            entries.addAfter(Items.NETHER_WART, ModItems.WARPED_WART);
         });
     }
 }

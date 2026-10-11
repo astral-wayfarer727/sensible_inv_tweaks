@@ -1,12 +1,12 @@
 {
+  "item.sensible_inv_tweaks.butcher_knife": "Butcher Knife",
+
   "item.sensible_inv_tweaks.raw_flank": "Raw Flank",
   "item.sensible_inv_tweaks.cooked_flank": "Cooked Flank",
   "item.sensible_inv_tweaks.raw_haunch": "Raw Haunch",
   "item.sensible_inv_tweaks.cooked_haunch": "Cooked Haunch",
   "item.sensible_inv_tweaks.raw_fish": "Raw Fish",
   "item.sensible_inv_tweaks.cooked_fish": "Cooked Fish",
-
-  "item.sensible_inv_tweaks.warped_wart": "Warped Wart",
 
   "item.sensible_inv_tweaks.golden_potato": "Golden Potato",
   "item.minecraft.potion.effect.haste": "Potion of Haste",
@@ -19,7 +19,6 @@
   "item.minecraft.tipped_arrow.effect.mining_fatigue": "Arrow of Mining Fatigue",
 
   "item.sensible_inv_tweaks.glowstick_item": "Glowstick",
-
 
   "block.sensible_inv_tweaks.lapis_stairs": "Lapis Stairs",
   "block.sensible_inv_tweaks.lapis_slab": "Lapis Slab",
@@ -100,23 +99,6 @@
   "block.sensible_inv_tweaks.cut_blue_ice_stairs": "Cut Blue Ice Stairs",
   "block.sensible_inv_tweaks.cut_blue_ice_slab": "Cut Blue Ice Slab",
   "block.sensible_inv_tweaks.cut_blue_ice_wall": "Cut Blue Ice Wall",
-
-  "block.sensible_inv_tweaks.red_nether_brick_fence": "Red Nether Brick Fence",
-  "block.sensible_inv_tweaks.red_chiseled_nether_bricks": "Red Chiseled Nether Bricks",
-  "block.sensible_inv_tweaks.red_cracked_nether_bricks": "Red Cracked Nether Bricks",
-
-  "block.sensible_inv_tweaks.blue_nether_bricks": "Blue Nether Bricks",
-  "block.sensible_inv_tweaks.blue_nether_brick_stairs": "Blue Nether Brick Stairs",
-  "block.sensible_inv_tweaks.blue_nether_brick_slab": "Blue Nether Brick Slab",
-  "block.sensible_inv_tweaks.blue_nether_brick_wall": "Blue Nether Brick Wall",
-  "block.sensible_inv_tweaks.blue_nether_brick_fence": "Blue Nether Brick Fence",
-  "block.sensible_inv_tweaks.blue_chiseled_nether_bricks": "Blue Chiseled Nether Bricks",
-  "block.sensible_inv_tweaks.blue_cracked_nether_bricks": "Blue Cracked Nether Bricks",
-
-  "block.sensible_inv_tweaks.crimson_cap": "Crimson Cap",
-  "block.sensible_inv_tweaks.warped_cap": "Warped Cap",
-  "block.sensible_inv_tweaks.crimson_budding_shroomlight": "Crimson Budding Shroomlight",
-  "block.sensible_inv_tweaks.warped_budding_shroomlight": "Warped Budding Shroomlight",
 
   "block.sensible_inv_tweaks.ochre_redstone_lamp": "Ochre Redstone Lamp",
   "block.sensible_inv_tweaks.pearlescent_redstone_lamp": "Pearlescent Redstone Lamp",

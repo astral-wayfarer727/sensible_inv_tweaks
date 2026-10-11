@@ -35,7 +35,7 @@ public class GunpowderBlock extends ColoredFallingBlock {
                     pos.getY() + 0.5D,
                     pos.getZ() + 0.5D,
                     5.0F,
-                    false,
+                    true,
                     ServerWorld.ExplosionSourceType.BLOCK
             );
         } else {
@@ -56,7 +56,7 @@ public class GunpowderBlock extends ColoredFallingBlock {
                         blockPos.getY() + 0.5D,
                         blockPos.getZ() + 0.5D,
                         5.0F,
-                        false,
+                        true,
                         ServerWorld.ExplosionSourceType.BLOCK
                 );
             }

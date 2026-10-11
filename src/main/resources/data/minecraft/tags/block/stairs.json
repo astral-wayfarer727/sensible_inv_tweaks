@@ -1,4 +1,5 @@
 {
+  "replace": false,
   "values": [
     "sensible_inv_tweaks:packed_snow_stairs",
     "sensible_inv_tweaks:cut_packed_ice_stairs",
@@ -11,7 +12,6 @@
     "sensible_inv_tweaks:netherite_brick_stairs",
     "sensible_inv_tweaks:gold_brick_stairs",
     "sensible_inv_tweaks:iron_brick_stairs",
-    "sensible_inv_tweaks:blue_nether_brick_stairs",
     "sensible_inv_tweaks:polished_cobblestone_stairs"
   ]
 }

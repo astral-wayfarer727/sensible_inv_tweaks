@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " # ",
+    "/  "
+  ],
+  "key": {
+    "#": "minecraft:iron_ingot",
+    "/": "minecraft:stick"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:butcher_knife"
+  }
+}

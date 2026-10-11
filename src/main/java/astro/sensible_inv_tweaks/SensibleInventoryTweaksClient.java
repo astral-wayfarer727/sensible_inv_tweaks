@@ -8,7 +8,6 @@ import net.minecraft.client.render.BlockRenderLayer;
 public class SensibleInventoryTweaksClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.putBlock(ModBlocks.WARPED_WART_CROP, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.FRAMED_GLASS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.FRAMED_GLASS_PANE, BlockRenderLayer.CUTOUT);
     }

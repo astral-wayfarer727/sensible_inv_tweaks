@@ -19,7 +19,7 @@
 			"astro.sensible_inv_tweaks.SensibleInventoryTweaks"
 		],
 		"fabric-datagen": [
-			"astro.sensible_inv_tweaks.SensibleInventoryDataGenerator"
+			"astro.sensible_inv_tweaks.datagen.SensibleInventoryDataGenerator"
 		],
 		"client": [
 			"astro.sensible_inv_tweaks.SensibleInventoryTweaksClient"

@@ -3,6 +3,10 @@ package astro.sensible_inv_tweaks.datagen;
 import astro.sensible_inv_tweaks.blocks.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.Items;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -49,14 +53,6 @@ public class SITLootTablesProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.NETHERITE_BRICK_STAIRS);
         addDrop(ModBlocks.NETHERITE_BRICK_WALL);
         addDrop(ModBlocks.NETHERITE_BRICK_SLAB, slabDrops(ModBlocks.NETHERITE_BRICK_SLAB));
-
-        addDrop(ModBlocks.BLUE_NETHER_BRICKS);
-        addDrop(ModBlocks.BLUE_NETHER_BRICK_STAIRS);
-        addDrop(ModBlocks.BLUE_NETHER_BRICK_WALL);
-        addDrop(ModBlocks.BLUE_NETHER_BRICK_FENCE);
-        addDrop(ModBlocks.BLUE_CHISELED_NETHER_BRICKS);
-        addDrop(ModBlocks.BLUE_CRACKED_NETHER_BRICKS);
-        addDrop(ModBlocks.BLUE_NETHER_BRICK_SLAB, slabDrops(ModBlocks.BLUE_NETHER_BRICK_SLAB));
 
         addDrop(ModBlocks.POLISHED_COBBLESTONE);
         addDrop(ModBlocks.POLISHED_COBBLESTONE_STAIRS);

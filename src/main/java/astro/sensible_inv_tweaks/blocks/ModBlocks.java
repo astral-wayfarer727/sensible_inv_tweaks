@@ -29,48 +29,6 @@ public class ModBlocks {
         return block;
     }
 
-    //Red Nether Brick Extras
-    public static FenceBlock RED_NETHER_BRICK_FENCE = (FenceBlock) register("red_nether_brick_fence",
-            FenceBlock::new, Block.Settings.copy(RED_NETHER_BRICKS));
-    public static Block RED_CRACKED_NETHER_BRICKS = register("red_cracked_nether_bricks",
-            Block::new, AbstractBlock.Settings.copy(RED_NETHER_BRICKS));
-    public static Block RED_CHISELED_NETHER_BRICKS = register("red_chiseled_nether_bricks",
-            Block::new, AbstractBlock.Settings.copy(RED_NETHER_BRICKS));
-
-    //Blue Nether Brick + Wart
-    public static Block WARPED_WART_CROP = register("warped_wart_crop",
-            WarpedWartBlock::new, AbstractBlock.Settings.create().mapColor(MapColor.BLUE).noCollision().ticksRandomly().sounds(BlockSoundGroup.NETHER_WART).pistonBehavior(PistonBehavior.DESTROY));
-    public static Block BLUE_NETHER_BRICKS = register("blue_nether_bricks",
-            Block::new, AbstractBlock.Settings.copy(RED_NETHER_BRICKS).mapColor(MapColor.BLUE));
-    public static Block BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs",
-            settings -> new StairsBlock(BLUE_NETHER_BRICKS.getDefaultState(), settings),
-            Block.Settings.copy(BLUE_NETHER_BRICKS));
-    public static SlabBlock BLUE_NETHER_BRICK_SLAB = (SlabBlock) register("blue_nether_brick_slab",
-            SlabBlock::new, Block.Settings.copy(BLUE_NETHER_BRICKS));
-    public static WallBlock BLUE_NETHER_BRICK_WALL = (WallBlock) register("blue_nether_brick_wall",
-            WallBlock::new, Block.Settings.copy(BLUE_NETHER_BRICKS));
-    public static FenceBlock BLUE_NETHER_BRICK_FENCE = (FenceBlock) register("blue_nether_brick_fence",
-            FenceBlock::new, Block.Settings.copy(BLUE_NETHER_BRICKS));
-    public static Block BLUE_CRACKED_NETHER_BRICKS = register("blue_cracked_nether_bricks",
-            Block::new, AbstractBlock.Settings.copy(BLUE_NETHER_BRICKS));
-    public static Block BLUE_CHISELED_NETHER_BRICKS = register("blue_chiseled_nether_bricks",
-            Block::new, AbstractBlock.Settings.copy(BLUE_NETHER_BRICKS));
-
-
-    //Nether Foliage
-    public static Block CRIMSON_CAP = register("crimson_cap",
-            settings -> new UntintedParticleLeavesBlock(0.01f, ParticleTypes.CRIMSON_SPORE, settings),
-            AbstractBlock.Settings.create().ticksRandomly().mapColor(MapColor.RED).strength(0.5F).sounds(BlockSoundGroup.WART_BLOCK));
-    public static Block WARPED_CAP = register("warped_cap",
-            settings -> new UntintedParticleLeavesBlock(0.01f, ParticleTypes.WARPED_SPORE, settings),
-            AbstractBlock.Settings.create().ticksRandomly().mapColor(MapColor.BRIGHT_TEAL).strength(0.5F).sounds(BlockSoundGroup.WART_BLOCK));
-    public static Block CRIMSON_BUDDING_SHROOMLIGHT = register("crimson_budding_shroomlight",
-            settings -> new UntintedParticleLeavesBlock(0.0f, ParticleTypes.CRIMSON_SPORE, settings),
-            AbstractBlock.Settings.create().ticksRandomly().mapColor(MapColor.RED).strength(1.0F).luminance(state -> 12).sounds(BlockSoundGroup.SHROOMLIGHT));
-    public static Block WARPED_BUDDING_SHROOMLIGHT = register("warped_budding_shroomlight",
-            settings -> new UntintedParticleLeavesBlock(0.0f, ParticleTypes.WARPED_SPORE, settings),
-            AbstractBlock.Settings.create().ticksRandomly().mapColor(MapColor.BRIGHT_TEAL).strength(1.0F).luminance(state -> 12).sounds(BlockSoundGroup.SHROOMLIGHT));
-
     //Polished Cobblestone
     public static Block POLISHED_COBBLESTONE = register("polished_cobblestone",
             Block::new, AbstractBlock.Settings.copy(COBBLESTONE));
@@ -169,7 +127,7 @@ public class ModBlocks {
     public static Block BLAZE_PILLAR = register("blaze_pillar",
             PillarBlock::new, AbstractBlock.Settings.copy(IRON_BLOCK).luminance(state -> 14));
     public static Block BREEZE_PILLAR = register("breeze_pillar",
-            PillarBlock::new, AbstractBlock.Settings.copy(IRON_BLOCK));
+            BreezePillarBlock::new, AbstractBlock.Settings.copy(IRON_BLOCK));
     public static Block FEATHER_BLOCK = register("feather_block",
             HayBlock::new, AbstractBlock.Settings.copy(HAY_BLOCK).mapColor(MapColor.WHITE).sounds(BlockSoundGroup.WOOL));
     public static Block GUNPOWDER_BLOCK = register("gunpowder_block",
@@ -318,18 +276,6 @@ public class ModBlocks {
             entries.addAfter(ModBlocks.POLISHED_COBBLESTONE_STAIRS, ModBlocks.POLISHED_COBBLESTONE_SLAB);
             entries.addAfter(ModBlocks.POLISHED_COBBLESTONE_SLAB, ModBlocks.POLISHED_COBBLESTONE_WALL);
 
-            entries.addAfter(Blocks.RED_NETHER_BRICK_WALL, ModBlocks.RED_NETHER_BRICK_FENCE);
-            entries.addAfter(ModBlocks.RED_NETHER_BRICK_FENCE, ModBlocks.RED_CHISELED_NETHER_BRICKS);
-            entries.addAfter(Blocks.RED_NETHER_BRICKS, ModBlocks.RED_CRACKED_NETHER_BRICKS);
-
-            entries.addAfter(ModBlocks.RED_CHISELED_NETHER_BRICKS, ModBlocks.BLUE_NETHER_BRICKS);
-            entries.addAfter(ModBlocks.BLUE_NETHER_BRICKS, ModBlocks.BLUE_CRACKED_NETHER_BRICKS);
-            entries.addAfter(ModBlocks.BLUE_CRACKED_NETHER_BRICKS, ModBlocks.BLUE_NETHER_BRICK_STAIRS);
-            entries.addAfter(ModBlocks.BLUE_NETHER_BRICK_STAIRS, ModBlocks.BLUE_NETHER_BRICK_SLAB);
-            entries.addAfter(ModBlocks.BLUE_NETHER_BRICK_SLAB, ModBlocks.BLUE_NETHER_BRICK_WALL);
-            entries.addAfter(ModBlocks.BLUE_NETHER_BRICK_WALL, ModBlocks.BLUE_NETHER_BRICK_FENCE);
-            entries.addAfter(ModBlocks.BLUE_NETHER_BRICK_FENCE, ModBlocks.BLUE_CHISELED_NETHER_BRICKS);
-
             entries.addAfter(Blocks.CUT_RED_SANDSTONE_SLAB, ModBlocks.PACKED_SNOW);
             entries.addAfter(ModBlocks.PACKED_SNOW, ModBlocks.PACKED_SNOW_STAIRS);
             entries.addAfter(ModBlocks.PACKED_SNOW_STAIRS, ModBlocks.PACKED_SNOW_SLAB);
@@ -366,10 +312,6 @@ public class ModBlocks {
             entries.addAfter(ModBlocks.FRAMED_GLASS, ModBlocks.FRAMED_GLASS_PANE);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
-            entries.addAfter(Blocks.WARPED_WART_BLOCK, ModBlocks.CRIMSON_CAP);
-            entries.addAfter(ModBlocks.CRIMSON_CAP, ModBlocks.WARPED_CAP);
-            entries.addAfter(Blocks.SHROOMLIGHT, ModBlocks.CRIMSON_BUDDING_SHROOMLIGHT);
-            entries.addAfter(ModBlocks.CRIMSON_BUDDING_SHROOMLIGHT, ModBlocks.WARPED_BUDDING_SHROOMLIGHT);
             entries.addAfter(Blocks.HAY_BLOCK, ModBlocks.BUNDLED_THATCH);
             entries.addAfter(ModBlocks.BUNDLED_THATCH, ModBlocks.THATCH);
             entries.addAfter(ModBlocks.THATCH, ModBlocks.THATCH_STAIRS);
