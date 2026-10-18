@@ -1,4 +1,7 @@
 {
+  "item.sensible_inv_tweaks.raw_carbon_iron": "Raw Carbon Iron",
+  "item.sensible_inv_tweaks.steel_ingot": "Steel Ingot",
+  "item.sensible_inv_tweaks.sledge_hammer": "Sledge Hammer",
   "item.sensible_inv_tweaks.butcher_knife": "Butcher Knife",
 
   "item.sensible_inv_tweaks.raw_flank": "Raw Flank",
@@ -7,6 +10,11 @@
   "item.sensible_inv_tweaks.cooked_haunch": "Cooked Haunch",
   "item.sensible_inv_tweaks.raw_fish": "Raw Fish",
   "item.sensible_inv_tweaks.cooked_fish": "Cooked Fish",
+
+  "item.sensible_inv_tweaks.raw_crab_marrow": "Raw Crab Marrow",
+  "item.sensible_inv_tweaks.cooked_crab_marrow": "Cooked Crab Marrow",
+  "item.sensible_inv_tweaks.crab_claw": "Crab Claw",
+  "item.sensible_inv_tweaks.crab_spawn_egg": "Crab Spawn Egg",
 
   "item.sensible_inv_tweaks.golden_potato": "Golden Potato",
   "item.minecraft.potion.effect.haste": "Potion of Haste",
@@ -19,6 +27,16 @@
   "item.minecraft.tipped_arrow.effect.mining_fatigue": "Arrow of Mining Fatigue",
 
   "item.sensible_inv_tweaks.glowstick_item": "Glowstick",
+
+  "block.sensible_inv_tweaks.raw_carbon_iron_block": "Block of Raw Carbon Iron",
+  "block.sensible_inv_tweaks.steel_block": "Block of Steel",
+  "block.sensible_inv_tweaks.steel_bars": "Steel Bars",
+  "block.sensible_inv_tweaks.steel_door": "Steel Door",
+  "block.sensible_inv_tweaks.steel_trapdoor": "Steel Trapdoor",
+  "block.sensible_inv_tweaks.steel_tiles": "Steel Tiles",
+  "block.sensible_inv_tweaks.steel_tile_stairs": "Steel Tile Stairs",
+  "block.sensible_inv_tweaks.steel_tile_slab": "Steel Tile Slab",
+  "block.sensible_inv_tweaks.steel_tile_wall": "Steel Tile Wall",
 
   "block.sensible_inv_tweaks.lapis_stairs": "Lapis Stairs",
   "block.sensible_inv_tweaks.lapis_slab": "Lapis Slab",
@@ -70,6 +88,7 @@
   "block.sensible_inv_tweaks.feather_block": "Block of Feathers",
   "block.sensible_inv_tweaks.gunpowder_block": "Block of Gunpowder",
   "block.sensible_inv_tweaks.sugar_block": "Block of Sugar",
+  "block.sensible_inv_tweaks.stick_bundle": "Bundled Sticks",
 
   "block.sensible_inv_tweaks.bundled_thatch": "Bundled Thatch",
   "block.sensible_inv_tweaks.thatch": "Thatch",
@@ -108,5 +127,7 @@
   "block.sensible_inv_tweaks.framed_glass": "Framed Glass",
   "block.sensible_inv_tweaks.framed_glass_pane": "Framed Glass Pane",
   "block.sensible_inv_tweaks.glowstick": "Glowstick",
-  "block.sensible_inv_tweaks.wall_glowstick": "Wall Glowstick"
+  "block.sensible_inv_tweaks.wall_glowstick": "Wall Glowstick",
+
+  "sounds.sensible_inv_tweaks.crab_step": "Footsteps"
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sensible_inv_tweaks:steel_tiles"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:steel_tile_wall",
+    "count": 6
+  }
+}

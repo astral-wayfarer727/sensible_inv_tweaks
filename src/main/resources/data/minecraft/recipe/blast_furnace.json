@@ -3,12 +3,12 @@
   "pattern": [
     "###",
     "#F#",
-    "CCC"
+    "SSS"
   ],
   "key": {
-    "#": "minecraft:iron_ingot",
+    "#": "sensible_inv_tweaks:steel_ingot",
     "F": "minecraft:furnace",
-    "C": "minecraft:cobblestone"
+    "S": "#minecraft:stone_crafting_materials"
   },
   "result": {
     "id": "minecraft:blast_furnace"

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:raw_iron_block",
+    "minecraft:raw_iron_block",
+    "minecraft:coal_block",
+    "minecraft:coal_block"
+  ],
+  "result": {
+    "id": "sensible_inv_tweaks:raw_carbon_iron_block",
+    "count": 4
+  }
+}

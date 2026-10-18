@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "sensible_inv_tweaks:crab_claw"
+  ],
+  "result": {
+    "id": "sensible_inv_tweaks:raw_crab_marrow",
+    "count": 1
+  }
+}

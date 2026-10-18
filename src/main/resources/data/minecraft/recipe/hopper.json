@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": "minecraft:chest",
+    "S": "sensible_inv_tweaks:steel_ingot"
+  },
+  "pattern": [
+    "S S",
+    "SCS",
+    " S "
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:hopper"
+  }
+}

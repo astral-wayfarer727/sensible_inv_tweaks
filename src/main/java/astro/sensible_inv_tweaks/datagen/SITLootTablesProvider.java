@@ -24,6 +24,16 @@ public class SITLootTablesProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.THATCH_WALL);
         addDrop(ModBlocks.THATCH_SLAB, slabDrops(ModBlocks.THATCH_SLAB));
 
+        addDrop(ModBlocks.STEEL_BLOCK);
+        addDrop(ModBlocks.RAW_CARBON_IRON_BLOCK);
+        addDrop(ModBlocks.STEEL_BARS);
+        addDrop(ModBlocks.STEEL_DOOR, doorDrops(ModBlocks.STEEL_DOOR));
+        addDrop(ModBlocks.STEEL_TRAPDOOR);
+        addDrop(ModBlocks.STEEL_TILES);
+        addDrop(ModBlocks.STEEL_TILE_STAIRS);
+        addDrop(ModBlocks.STEEL_TILE_WALL);
+        addDrop(ModBlocks.STEEL_TILE_SLAB, slabDrops(ModBlocks.STEEL_TILE_SLAB));
+
         addDrop(ModBlocks.IRON_BRICKS);
         addDrop(ModBlocks.CHISELED_IRON_BRICKS);
         addDrop(ModBlocks.IRON_BRICK_STAIRS);
@@ -59,6 +69,7 @@ public class SITLootTablesProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.POLISHED_COBBLESTONE_WALL);
         addDrop(ModBlocks.POLISHED_COBBLESTONE_SLAB, slabDrops(ModBlocks.POLISHED_COBBLESTONE_SLAB));
 
+        addDrop(ModBlocks.STICK_BUNDLE);
         addDrop(ModBlocks.FRAMED_GLASS);
         addDrop(ModBlocks.FRAMED_GLASS_PANE);
         addDrop(ModBlocks.GLOWSTICK);

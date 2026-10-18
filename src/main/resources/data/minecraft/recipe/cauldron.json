@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "sensible_inv_tweaks:steel_ingot"
+  },
+  "pattern": [
+    "# #",
+    "# #",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:cauldron"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#H#",
+    " / ",
+    " # "
+  ],
+  "key": {
+    "#": "sensible_inv_tweaks:steel_ingot",
+    "H": "minecraft:heavy_core",
+    "/": "minecraft:stick"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:sledge_hammer"
+  }
+}

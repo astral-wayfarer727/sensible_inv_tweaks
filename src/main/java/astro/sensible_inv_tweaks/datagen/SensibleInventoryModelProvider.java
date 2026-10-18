@@ -14,6 +14,17 @@ public class SensibleInventoryModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        //Steel Related
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_CARBON_IRON_BLOCK);
+        blockStateModelGenerator.registerBars(ModBlocks.STEEL_BARS);
+        blockStateModelGenerator.registerDoor(ModBlocks.STEEL_DOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.STEEL_TRAPDOOR);
+
+        BlockStateModelGenerator.BlockTexturePool steelTilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STEEL_TILES);
+        steelTilePool.stairs(ModBlocks.STEEL_TILE_STAIRS);
+        steelTilePool.slab(ModBlocks.STEEL_TILE_SLAB);
+        steelTilePool.wall(ModBlocks.STEEL_TILE_WALL);
+
         //Lapis Blockset
         BlockStateModelGenerator.BlockTexturePool lapisBlockExtrasPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LAPIS_BLOCK);
         lapisBlockExtrasPool.stairs(ModBlocks.LAPIS_STAIRS);
@@ -91,11 +102,14 @@ public class SensibleInventoryModelProvider extends FabricModelProvider {
         //Misc
         blockStateModelGenerator.registerGlassAndPane(ModBlocks.FRAMED_GLASS, ModBlocks.FRAMED_GLASS_PANE);
         blockStateModelGenerator.registerTorch(ModBlocks.GLOWSTICK, ModBlocks.WALL_GLOWSTICK);
+        blockStateModelGenerator.registerAxisRotated(ModBlocks.STICK_BUNDLE, TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.BUTCHER_KNIFE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RAW_CARBON_IRON, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.RAW_FLANK, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_FLANK, Models.GENERATED);
@@ -103,6 +117,10 @@ public class SensibleInventoryModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COOKED_HAUNCH, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_FISH, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_FISH, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.RAW_CRAB_MARROW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_CRAB_MARROW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRAB_SPAWN_EGG, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.GOLDEN_POTATO, Models.GENERATED);
     }

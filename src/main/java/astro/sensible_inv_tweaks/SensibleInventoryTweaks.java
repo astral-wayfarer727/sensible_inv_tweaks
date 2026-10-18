@@ -1,13 +1,23 @@
 package astro.sensible_inv_tweaks;
 
 import astro.sensible_inv_tweaks.blocks.ModBlocks;
+import astro.sensible_inv_tweaks.entities.ModEntities;
+import astro.sensible_inv_tweaks.entities.custom.CrabEntity;
 import astro.sensible_inv_tweaks.items.ModItems;
 import astro.sensible_inv_tweaks.potion.ModPotions;
+import astro.sensible_inv_tweaks.sound.SITSound;
+import astro.sensible_inv_tweaks.util.SledgeHammerEvent;
 import astro.sensible_inv_tweaks.world.SITFeatureGeneration;
+import astro.sensible_inv_tweaks.world.gen.SITEntitySpawns;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
+import net.minecraft.item.FuelRegistry;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
 import org.slf4j.Logger;
@@ -22,7 +32,14 @@ public class SensibleInventoryTweaks implements ModInitializer {
 		ModItems.registerItems();
 		ModBlocks.registerBlocks();
 		ModPotions.registerPotions();
+		ModEntities.registerModEntities();
 		SITFeatureGeneration.generatePlacedFeatures();
+		SITSound.registerSounds();
+		SITEntitySpawns.addSpawns();
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STICK_BUNDLE, 15, 30);
+		FuelRegistryEvents.BUILD.register((builder, context) -> {
+			builder.add(ModBlocks.STICK_BUNDLE, 1000);
+		});
 
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(Potions.AWKWARD, ModItems.GOLDEN_POTATO, ModPotions.HASTE);
@@ -45,5 +62,9 @@ public class SensibleInventoryTweaks implements ModInitializer {
 		CompostingChanceRegistry.INSTANCE.add(ModBlocks.THATCH_SLAB, 0.1F);
 		CompostingChanceRegistry.INSTANCE.add(ModBlocks.THATCH_STAIRS, 0.1F);
 		CompostingChanceRegistry.INSTANCE.add(ModBlocks.THATCH_WALL, 0.1F);
+
+		FabricDefaultAttributeRegistry.register(ModEntities.CRAB, CrabEntity.createCrabAttributes());
+
+		PlayerBlockBreakEvents.BEFORE.register(new SledgeHammerEvent());
 	}
 }
