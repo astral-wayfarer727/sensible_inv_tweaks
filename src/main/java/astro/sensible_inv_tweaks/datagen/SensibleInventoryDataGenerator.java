@@ -15,6 +15,9 @@ public class SensibleInventoryDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(SensibleInventoryModelProvider::new);
         pack.addProvider(SITLootTablesProvider::new);
         pack.addProvider(SITWorldGenerator::new);
+        pack.addProvider(SITItemTagProvider::new);
+        pack.addProvider(SITBlockTagProvider::new);
+        pack.addProvider(SITEntityTagProvider::new);
     }
 
     @Override

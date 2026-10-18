@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.7,
+  "cookingtime": 100,
+  "ingredient": "sensible_inv_tweaks:raw_carbon_iron",
+  "result": {
+    "id": "sensible_inv_tweaks:steel_ingot"
+  }
+}

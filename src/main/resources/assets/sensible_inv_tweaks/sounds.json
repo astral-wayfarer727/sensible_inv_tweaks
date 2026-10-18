@@ -1,0 +1,11 @@
+{
+  "crab_step": {
+    "subtitle": "sounds.sensible_inv_tweaks.crab_step",
+    "sounds": [
+      "sensible_inv_tweaks:crab_step_1",
+      "sensible_inv_tweaks:crab_step_2",
+      "sensible_inv_tweaks:crab_step_3",
+      "sensible_inv_tweaks:crab_step_4"
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "sensible_inv_tweaks:steel_tile_stairs",
     "sensible_inv_tweaks:packed_snow_stairs",
     "sensible_inv_tweaks:cut_packed_ice_stairs",
     "sensible_inv_tweaks:cut_blue_ice_stairs",

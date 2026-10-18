@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "sensible_inv_tweaks:raw_carbon_iron"
+  },
+  "result": {
+    "id": "sensible_inv_tweaks:raw_carbon_iron_block"
+  }
+}

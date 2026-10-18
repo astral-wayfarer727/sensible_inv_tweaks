@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
+    "sensible_inv_tweaks:steel_block",
+    "sensible_inv_tweaks:steel_tiles",
+    "sensible_inv_tweaks:steel_tile_stairs",
+    "sensible_inv_tweaks:steel_tile_slab",
+    "sensible_inv_tweaks:steel_tile_wall",
+    "sensible_inv_tweaks:raw_carbon_iron_block",
+    "sensible_inv_tweaks:steel_bars",
+    "sensible_inv_tweaks:steel_door",
+    "sensible_inv_tweaks:steel_trapdoor",
     "sensible_inv_tweaks:lapis_bricks",
     "sensible_inv_tweaks:lapis_stairs",
     "sensible_inv_tweaks:lapis_slab",

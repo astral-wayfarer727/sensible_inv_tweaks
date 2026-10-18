@@ -6,7 +6,7 @@
     "/  "
   ],
   "key": {
-    "#": "minecraft:iron_ingot",
+    "#": "sensible_inv_tweaks:steel_ingot",
     "/": "minecraft:stick"
   },
   "result": {

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "sensible_inv_tweaks:stick_bundle",
     "minecraft:cactus"
   ]
 }

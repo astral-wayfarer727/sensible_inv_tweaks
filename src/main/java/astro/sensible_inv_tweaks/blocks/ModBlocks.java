@@ -2,15 +2,16 @@ package astro.sensible_inv_tweaks.blocks;
 
 import astro.sensible_inv_tweaks.SensibleInventoryTweaks;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.type.BlockSetTypeBuilder;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ColorCode;
 import net.minecraft.util.Identifier;
@@ -28,6 +29,36 @@ public class ModBlocks {
         Items.register(block);
         return block;
     }
+
+    //Steel Related
+    public static final Block RAW_CARBON_IRON_BLOCK = register(
+            "raw_carbon_iron_block",
+            Block::new, AbstractBlock.Settings.copy(Blocks.RAW_IRON_BLOCK).mapColor(MapColor.GRAY));
+    public static final Block STEEL_BLOCK = register(
+            "steel_block",
+            Block::new, AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).mapColor(MapColor.GRAY));
+    public static final Block STEEL_BARS = register(
+            "steel_bars", PaneBlock::new, AbstractBlock.Settings.copy(Blocks.IRON_BARS));
+
+    public static Block STEEL_TILES = register("steel_tiles",
+            Block::new, AbstractBlock.Settings.copy(STEEL_BLOCK));
+    public static Block STEEL_TILE_STAIRS = register("steel_tile_stairs",
+            settings -> new StairsBlock(STEEL_TILES.getDefaultState(), settings),
+            Block.Settings.copy(STEEL_TILES));
+    public static SlabBlock STEEL_TILE_SLAB = (SlabBlock) register("steel_tile_slab",
+            SlabBlock::new, Block.Settings.copy(STEEL_TILES));
+    public static WallBlock STEEL_TILE_WALL = (WallBlock) register("steel_tile_wall",
+            WallBlock::new, Block.Settings.copy(STEEL_TILES));
+    public static final Block STEEL_DOOR = register(
+            "steel_door",
+            settings -> new DoorBlock(ModBlockSetTypes.STEEL, settings),
+            AbstractBlock.Settings.create().mapColor(MapColor.GRAY).strength(5.0F).nonOpaque().pistonBehavior(PistonBehavior.DESTROY)
+    );
+    public static final Block STEEL_TRAPDOOR = register(
+            "steel_trapdoor",
+            settings -> new TrapdoorBlock(ModBlockSetTypes.STEEL, settings),
+            AbstractBlock.Settings.create().mapColor(MapColor.GRAY).requiresTool().strength(5.0F).nonOpaque().allowsSpawning(Blocks::never)
+    );
 
     //Polished Cobblestone
     public static Block POLISHED_COBBLESTONE = register("polished_cobblestone",
@@ -136,6 +167,9 @@ public class ModBlocks {
     public static Block SUGAR_BLOCK = register("sugar_block",
             settings -> new ColoredFallingBlock(new ColorCode(-555884033), settings),
             AbstractBlock.Settings.create().mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND));
+    public static final Block STICK_BUNDLE = register("stick_bundle",
+            PillarBlock::new, AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(1.5F).sounds(BlockSoundGroup.WOOD).burnable());
+
 
     public static Block BUNDLED_THATCH = register("bundled_thatch",
             HayBlock::new, AbstractBlock.Settings.copy(HAY_BLOCK).mapColor(MapColor.RAW_IRON_PINK).sounds(BlockSoundGroup.GRASS));
@@ -232,6 +266,17 @@ public class ModBlocks {
         SensibleInventoryTweaks.LOGGER.info("Registering Blocks for " + SensibleInventoryTweaks.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+            entries.addBefore(Blocks.OAK_LOG, ModBlocks.STICK_BUNDLE);
+
+            entries.addAfter(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, ModBlocks.STEEL_BLOCK);
+            entries.addAfter(ModBlocks.STEEL_BLOCK, ModBlocks.STEEL_TILES);
+            entries.addAfter(ModBlocks.STEEL_TILES, ModBlocks.STEEL_TILE_STAIRS);
+            entries.addAfter(ModBlocks.STEEL_TILE_STAIRS, ModBlocks.STEEL_TILE_SLAB);
+            entries.addAfter(ModBlocks.STEEL_TILE_SLAB, ModBlocks.STEEL_TILE_WALL);
+            entries.addAfter(ModBlocks.STEEL_TILE_WALL, ModBlocks.STEEL_BARS);
+            entries.addAfter(ModBlocks.STEEL_BARS, ModBlocks.STEEL_DOOR);
+            entries.addAfter(ModBlocks.STEEL_DOOR, ModBlocks.STEEL_TRAPDOOR);
+
             entries.addAfter(Blocks.LAPIS_BLOCK, ModBlocks.LAPIS_STAIRS);
             entries.addAfter(ModBlocks.LAPIS_STAIRS, ModBlocks.LAPIS_SLAB);
             entries.addAfter(ModBlocks.LAPIS_SLAB, ModBlocks.CHISELED_LAPIS);
@@ -312,6 +357,8 @@ public class ModBlocks {
             entries.addAfter(ModBlocks.FRAMED_GLASS, ModBlocks.FRAMED_GLASS_PANE);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.addAfter(Blocks.RAW_IRON_BLOCK, ModBlocks.RAW_CARBON_IRON_BLOCK);
+
             entries.addAfter(Blocks.HAY_BLOCK, ModBlocks.BUNDLED_THATCH);
             entries.addAfter(ModBlocks.BUNDLED_THATCH, ModBlocks.THATCH);
             entries.addAfter(ModBlocks.THATCH, ModBlocks.THATCH_STAIRS);

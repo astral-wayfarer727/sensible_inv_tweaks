@@ -7,7 +7,7 @@
   ],
   "key": {
     "#": "minecraft:soul_torch",
-    "=": "minecraft:iron_ingot"
+    "=": "sensible_inv_tweaks:steel_ingot"
   },
   "result": {
     "id": "minecraft:soul_lantern",
