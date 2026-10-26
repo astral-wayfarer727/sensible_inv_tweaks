@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": "minecraft:iron_ingot",
-    "C": "minecraft:cobblestone",
+    "C": "#minecraft:stone_crafting_materials",
     "S": "minecraft:sentry_armor_trim_smithing_template"
   },
   "pattern": [

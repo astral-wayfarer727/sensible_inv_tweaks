@@ -15,7 +15,6 @@ import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.WaterCreatureEntity;
 import net.minecraft.entity.passive.AbstractNautilusEntity;
-import net.minecraft.entity.passive.StriderEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.server.world.ServerWorld;
